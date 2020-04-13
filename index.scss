@@ -1,0 +1,93 @@
+//
+// index.scss
+//
+@use "./elements/elements.scss" with (
+  $content-container: "body > main",
+);
+
+/*
+ * Demonstration Page
+ */
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+.icon {
+  direction: ltr;
+  display: inline-block;
+  font-family: 'Material Icons';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  text-transform: none;
+  white-space: nowrap;
+  word-wrap: normal;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+body > header {
+  nav {
+    display: flex;
+    height: 72px;
+    align-items: center;
+    border-bottom: 1px solid #CCC;
+    padding: 0 24px;
+
+    .left {
+      flex: 0 0 auto;
+      font-family: sans-serif;
+      font-size: 36px;
+    }
+    .center {
+      flex: 1 1 auto;
+      display: flex;
+      justify-content: flex-end;
+      padding: 0 24px;
+      
+      /* dropdown */
+      select {
+        flex: 0 0 auto;
+
+        font-family: sans-serif;
+        font-size: 24px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background: transparent;
+        background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+        background-repeat: no-repeat;
+        background-position-x: 100%;
+        background-position-y: 5px;
+        border: 1px solid black;
+        border-radius: 1px;
+        padding: 6px 36px 6px 24px;
+        font-size: 16px;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+    .right {
+      flex: 0 0 auto;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+}
+
+body > footer {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 72px;
+    border-top: 1px solid #CCC;
+
+    .github {
+      font-family: sans-serif;
+      font-size: 24px;
+      padding: 0 12px;
+    }
+  }
+}

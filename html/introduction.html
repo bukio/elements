@@ -1,0 +1,104 @@
+<p>
+  브라우저의 콘텐츠 요소<i>content elements</i>들의 기본 서식<i>default styles</i>은 만족할 만큼 아름답지 않으며 다양한 디바이스의 화면 크기에 글꼴크기<i><code>font-size</code></i> 등도 변화하지 않습니다.
+</p>
+<p>
+  본 ‟엘리먼츠<i>Elements</i>” 프로젝트는 블로그<i>blogs</i>, 디지털 출판물<i>digital publications</i>에서 사용되는 HTML 콘텐츠 요소<i>content elements</i>들의 브라우저 기본 서식<i>default styles</i>를 대체하는 것을 목표로 합니다.
+</p>
+<p>
+본 프로젝트의 결과물을 있는 그대로 혹은 일부 수정하여 여러분의 소중한 콘텐츠의 서식으로 자유롭게 활용하세요.
+</p>
+<p>
+이제 엘리먼츠<i>elements</i>의 디자인 원칙과 사용을 위한 몇가지 규칙을 설명하겠습니다. 제시되는 규칙들<i>conventions</i>은 저자의 의견이 반영된 선택일 뿐이며, 필요에 따라 자유롭게 재정의하여 이용하시기 바랍니다.
+</p>
+<h2>콘텐츠 모델<i>content model</i>에서 사용하는 단위와 용어</h2>
+<p>
+  레이아웃 모델에서 사용하는 단위는 다음과 같이 3가지 입니다.
+</p>
+<dl>
+  <dt>세트<i>set</i></dt>
+  <dd>하나의 “세트”는 동일선상에 있는 <code>header</code>, <code>main</code>, <code>footer</code>의 묶음입니다. 톡별히 메인 텍스트<i>main text</i>(이를 “본문”이라고 부르겠습니다)를 품고 있는 세트를 “콘텐츠 세트<i>content set</i>”라고 부르고, 본문을 직접 품고 있는 메인<i><code>main</code></i> 콘테이너를 “콘텐츠 콘테이너<i>content container</i>”라고 부르겠습니다.</dd>
+
+  <dt>콘테이너<i>container</i></dt>
+  <dd>콘테이너는 그 안에 <dfn>세트</dfn> 혹은 <dfn>텍스트</dfn>를 품습니다. 톡별히 콘텐츠 세트<i>content set</i>를 직접 품고 있는 콘테이너를 콘텐츠 콘테이너<i>content container</i>라고 부르며 반드시 <code>main</code> 요소<i>HTML element</i>이어야만 합니다.</dd>
+
+  <dt>텍스트<i>text</i></dt>
+  <dd>텍스트는 콘테이너 안에 직접 들어가 있는 콘텐츠 블록<i>blocks</i>의 시리즈입니다. 특정 콘테이너 안에 들어가 있는 텍스트를 해당 콘테이너의 “콘테이너 텍스트<i>container text</i>”라고 부르겠습니다. 또한 하나의 HTML 페이지에 있는 가장 중요한 텍스트를 “메인 텍스트<i>main text</i>”, 본문이라고 부르며, 본문의 부모는 반드시 <code>main</code> 요소의 컨테이너입니다.</dd>
+</dl>
+<hr>
+<p>
+  텍스트<i>text</i>를 구성하는 단위는 두가지 밖에 없습니다. 다만 나중에 살펴볼 <code>figure</code> 요소를 사용하여 본문과는 구별되는 섹션<i>section</i>을 만들어 본문 내에 삽입할 수 있습니다. 레이아웃 관점에서 이러한 섹션은 블록으로 간주됩니다.
+</p>
+<dl>
+  <dt>블록<i>block</i></dt>
+  <dd><code>_blocks.scss</code> 상단에는 블록 요소의 목록을 변수로 지정하고 있습니다. 이들 블록 요소는 마진 계산규칙<i>margin collapsing rule</i>에 따라 일관된 마진을 적용하기 위하여 블록 간의 간격은 <code>margin-top</code>이 아닌 <code>margin-bottom</code>을 통해 이루어 집니다.</dd>
+
+  <dt>인라인<i>inlines</i></dt>
+  <dd>하나의 블록에는 여러 인라인 요소들<i>inline elements</i>이 포함됩니다. 인라인 요소들에 대한 서식은 <code>_inlines.scss</code>에 정의되어 있습니다.</dd>
+</dl>
+<h2>
+   HTML 페이지 구성의 기본 규칙
+</h2>
+<p>
+  하나의 HTML 페이지는 논리적으로 애플리케이션 영역과 콘텐츠 영역으로 구분할 수 있습니다.
+</p>
+<pre>
+HTML Page = Application + Content
+          = {header, footer} + {main}
+</pre>
+<p>
+  <code>body</code>를 최상단 요소로 보았을 때, 바로 안에 <code>header</code>, <code>main</code>, <code>footer</code>가 있는 것을 가정합니다. 이 밖에 다른 요소들도 있을 수 있지만, 본 엘리먼츠 프로젝트에서는 고려하지 않습니다.
+</p>
+<p>
+  이 중에서 <code>main</code>에만 텍스트가 들어가는 것을 규칙<i>convention</i>으로 합니다. 만약 동적으로 콘텐츠를 가져오는 경우라면, 해당 프로그램은 <code>body &gt; main</code> 하부만을 변경하게 됩니다.
+</p>
+<pre>
+body &gt; header: 애플리케이션 헤더
+body &gt; footer: 애플리케이션 풋터
+</pre>
+<p>
+  콘텐츠를 성격에 따라 콜력션의 목차와 같은 부수적 콘텐츠, 글의 제목과 부제목, 글의 저자 정보 등이 표현되는 메타데이터 콘텐츠와 본문<i>main text</i>으로 나눌 수 있습니다. 이들 각각의 콘텐츠가 어떻게 배치되는 지들 몇가지 경우로 나누어 살펴봅니다.
+</p>
+<h3>단순히 하나의 글만 있는 경우</h3>
+<p>
+  이 경우의 <code>body &gt; main</code>에 들어가는 세트는 다음과 같이 구성됩니다.
+</p>
+<pre>
+body > main > header: 글 헤더
+body > main > main  : 본문
+body > main > footer: 글 풋터
+</pre>
+<h3>콜렉션의 목차 콘텐츠가 필요한 경우</h3>
+<p>
+  엘리먼츠에서 정의하는 HTML 페이지에는 항상 하나의 본문 만이 있습니다. 다만, 해당 본문이 특정 콜렉션의 여러 글 들 중의 하나인 경우에는 콜렉션의 목차 콘텐츠가 HTML 페이지에 포함되어 필요한 경우 즉각적으로 화면을 차지할 수 있습니다. 이러한 경우 <code>body &gt; main</code>은 다음과 같이 한단계 더 들어간 구조를 하게 됩니다.
+</p>
+<pre>
+body &gt; main &gt; header: 콜렉션 헤더
+body &gt; main &gt; main &gt; header: 글 헤더
+body &gt; main &gt; main &gt; main  : 본문
+body &gt; main &gt; main &gt; footer: 글 풋터
+body &gt; main &gt; footer: 콜렉션 풋터
+</pre>
+<p>
+  어떠한 경우에도 세가지 콘테이너는 하나의 세트로 구성되지만, 헤더와 풋터 안에는 아무런 콘텐츠가 없을 수 있습니다. 만약 동적으로 HTML 페이지를 구성하는 경우 변경되는 요소는 반드시 특정 <code>main</code> 요소에 한정하며, 경우에 따라서는 텍스트를 바로 안에 넣거나 하나의 세트를 넣고 해당 세트의 <code>main</code> 요소에 텍스트를 넣고 <code>header</code>와 <code>footer</code>에 부수적인 콘텐츠를 넣습니다.
+</p>
+<p>
+  본문을 품고 있는 <dfn>콘테이너</dfn>는 반드시 <code>main</code> 요소<i>element</i>이어야 하며 이러한 <code>main</code> 콘테이너가 속해 있는 세트를 콘텐츠 세트<i>content set</i>라고 부릅니다. 콘텐츠 세트의 위치가 경우에 따라 <code>body &gt; main</code>이거나, <code>body &gt; main &gt; main</code>일 수 있고, 경우에 따라서는 더 들어간 위치를 차지할 수 있기 때문에 본 엘리먼츠의 서식 파일은 해당 위치를  <code>$content-container</code>라는 모듈 변수를 통해서 지정할 수 있도록 되어 있습니다. 만약 지정되어 있지 않은 경우에는 기본 값으로 위의 두 경우를 포함하게 됩니다.
+</p>
+<p>
+  본문을 포함할 수 있는 요소와 위치를 이렇게 강제하여 쉽게 구별되도록 하는 이유는 다음과 같습니다.
+</p>
+<p>
+  첫째, 하이라이트<i>highlight</i>와 같이 본문에만 적용되는 기능을 본문으로 한정하기가 용이합니다.
+</p>
+<p>
+  둘째, 테마와 같은 사용자 설정을 본문을 포함하는 콘텐츠 세트에만 적용하기가 용이합니다. 물론 UX 자체도 테마를 적용할 수 있지만, 이 둘을 구분하여 적용하는 것이 보다 개발에 용이할 수 있습니다.
+</p>
+<p>
+  셋째, 엘리먼츠 서식이 UX 영역에 적용되는 것을 어느 정도 막을 수 있으며 콘텐츠 요소의 서식을 <code>!important</code> 없이 지정하는 것이 보다 용이합니다. 물론 이 모든 것이 항상 가능한 것은 아닙니다.
+</p>
+<p>
+  마지막으로 <code>body</code>에서 <code>main</code>을 따라 들어가는 방식의 알고리즘을 통하여 본문의 위치를 기계적으로 파악할 수 있습니다. 이는 하나의 HTML 페이지에는 하나의 본문만 있다는 규칙과 본문은 <code>body</code>와 본문사이에 <code>main</code> 요소 만을 갖는다는 특징을 이용하고 있습니다.
+</p>
+<p>
+  본 서식은 사용자 설정<i>viewer settings</i>과 테마<i>theme</i>를 지원합니다. <dfn>사용자 설정</dfn>은 콘텐츠 <dfn>세트</dfn>에 적용됩니다. 기본값은 <code>_variables.scss</code> 파일에서 정의되는 값을 살펴보세요.
+</p>

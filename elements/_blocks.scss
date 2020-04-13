@@ -1,0 +1,218 @@
+@use "sass:math" as math;
+@use "sass:list" as list;
+@use "variables" as *;
+
+/* blocks */
+$-headings: (h1, h2, h3, h4, h5, h6);
+$-blocks: join(
+  (p, ol, ul, dl, figure, blockquote, hr, pre, table),
+  $-headings
+);
+
+& {
+  // ----------------------------------------------
+  // Block Margins
+  // ----------------------------------------------
+  @each $elem in $-blocks {
+    #{$elem} {
+      padding: 0 0;
+      box-sizing: border-box;
+      width: 100%;
+
+      /* case: mobile */
+      margin: $block-margin_top 0 $block-margin_bottom 0;
+
+      /* case: large display */
+      @media all and (min-width: $viewport-width_max) {
+        margin-bottom: $block-margin_top;
+      }  
+    }
+  }
+
+  // ----------------------------------------------
+  // block: <figure></figure>
+  // ----------------------------------------------
+  figure img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+  }
+
+  figure figcaption {
+    margin: .6em .5em;
+    text-align: center;
+    letter-spacing: -.5px;
+    font-size: .85em;
+    font-weight: 200;
+    line-height: $line-height * .8;
+    opacity: .80;
+    word-break: keep-all;
+    word-wrap: break-word;
+  }
+
+  /* special case */
+  figure p {
+    text-indent: 0;
+  }
+
+  // ----------------------------------------------
+  // H1, H2, H3, H4, H5, H6
+  // ----------------------------------------------
+  @each $elem in $-headings {
+    #{$elem} {
+      line-height: $line-height * .8;
+      font-weight: bold;
+      word-break: keep-all;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      word-spacing: .0612em; /* a bit more space */
+
+      /* inline formats within headings */
+      i {
+        font-weight: normal;
+      }
+
+      /* special case */
+      & + p {
+        text-indent: 0;
+      }
+    }
+  }
+
+  /* heading - font size (modular scale) */
+  @for $i from 1 through 6 {
+    h#{$i} {
+      font-size: $heading-fontsize_min * math.pow($heading-fontsize_multiplier, 6 - $i)
+    }
+  }
+
+  /* special margin */
+  @each $block in $-blocks {
+    @each $heading in $-headings {
+      #{$block} + #{$heading} {
+        margin-top: 1.6em;
+        margin-bottom: .8em;
+      }  
+    }  
+  }
+
+  // ----------------------------------------------
+  // P
+  // ----------------------------------------------
+  p {
+    line-height: $line-height;
+    word-break: normal;
+
+    /* case: mobile */
+    text-indent: 0;
+  
+    /* case: large display */
+    @media all and (min-width: $viewport-width_max) {
+        text-indent: $text-indent;
+    }
+
+    /* special case: starting paragraph */
+    &:first-child {
+      text-indent: 0;
+    }
+  }
+
+  // ----------------------------------------------
+  // <ul>, <ol>, <dl>
+  // ----------------------------------------------
+  ul {
+    padding-left: 1em;
+    line-height: $line-height;
+  }
+  ol {
+    padding-left: 1.5em;
+    line-height: $line-height;
+  }
+  dl {
+    line-height: $line-height;
+    & > dt {
+      font-weight: bold;
+      margin-bottom: .15em;
+    }
+    & > dd {
+      margin-left: 1em;
+      margin-bottom: .6em;
+    }
+  }
+
+  // ----------------------------------------------
+  // <blockquote>
+  // ----------------------------------------------
+  blockquote {
+    padding: 0 0 0 1em;
+    border-left: 0.2em solid $color-secondary;
+    overflow: auto;
+
+    line-height: $line-height * .8;
+    text-indent: 0;
+    word-break: keep-all;
+
+    p {
+      line-height: $line-height * .8;
+    }
+
+    footer cite,
+    cite {
+      margin-right: .25em;
+      float: right;
+    }
+  }
+
+  // ----------------------------------------------
+  // <table>
+  // ----------------------------------------------
+  table {
+    border-collapse: collapse;
+
+    /* caption: optional */
+    caption {
+      font-size: inherit;
+      text-align: center;
+      margin: .6em 1em;
+    }
+
+    /* thead: optional */
+    thead {
+      background-color: rgba(0, 0, 0, .075);
+      border-top: 2px solid $table-border-color-dark;
+      border-bottom: 2px solid $table-border-color-dark;
+    }
+
+    /* tbody: optioonal */
+    tbody + tbody {
+      border-top: 2px solid $table-border-color-dark;
+    }
+
+    /* tfoot: optional */
+    tfoot {
+      border-top: 2px solid $table-border-color-dark;
+      border-bottom: 2px solid $table-border-color-dark;
+    }
+
+    /* cells */
+    td, th {
+      border: 1px solid $table-border-color;
+      padding: .6em .6em;
+    }
+  } 
+
+  // ----------------------------------------------
+  // <hr>
+  // ----------------------------------------------
+  hr {
+    border: 0;
+    height: 1px;
+    margin: $block-margin_bottom 0;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), $color_tertiary, rgba(0, 0, 0, 0));
+
+    /* special case: following paragraph */
+    & + p {
+      text-indent: 0;
+    }
+  }
+}

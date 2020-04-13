@@ -1,0 +1,31 @@
+{
+  "name": "elements",
+  "version": "1.0.0",
+  "description": "Reasonable CSS styles for HTML elements used in content markup",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel ./index.html",
+    "build": "parcel build ./index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bukio/elements.git"
+  },
+  "keywords": [
+    "html",
+    "sass"
+  ],
+  "author": "Buk.io, Inc.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bukio/elements/issues"
+  },
+  "homepage": "https://github.com/bukio/elements#readme",
+  "devDependencies": {
+    "modularscale-sass": "^3.0.10",
+    "parcel-bundler": "^1.12.4",
+    "posthtml-include": "^1.4.0",
+    "sass": "^1.26.2",
+    "sass-math-pow": "^0.1.7"
+  }
+}

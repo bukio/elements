@@ -1,0 +1,52 @@
+@use "variables" as *;
+
+// ----------------------------------------------
+// container
+// ----------------------------------------------
+@mixin container {
+  display: block;
+  box-sizing: border-box;
+  padding: 0 0;
+  margin: 0 0;
+
+  &:empty {
+    display: none;
+  }
+}
+
+// ----------------------------------------------
+// fluid-content
+// - apply fluid scheme to font size & margin
+// ----------------------------------------------
+@mixin fluid-content {
+  /* case: base */
+  font-size: 1em;
+  margin: 0 $viewport-margin_min;
+
+  /* case: fluid range */
+  $width-min: $viewport-width_min + 2 * $viewport-margin_min;
+  $width-max: $viewport-width_max + 2 * $viewport-margin_max;
+
+  $f-diff: $fontsize_max - $fontsize_min;
+  $m-diff: $viewport-margin_max - $viewport-margin-min;
+  $w-diff: $width-max - $width-min;
+  
+  $current: $width-min;
+  $step: $w-diff * 0.1;
+  
+  @while $current < $width-max {
+    $factor: ($current - $width-min) / $w-diff;
+    @media all and (min-width: $current) {
+      font-size: $fontsize_min + $f-diff * $factor;
+      margin: 0 $viewport-margin-min + $m-diff * $factor;
+    }
+    $current: $current + $step;
+  }
+
+  /* case: large */
+  @media all and (min-width: $width-max) {
+    width: $viewport-width_max;
+    margin: 0 auto;
+    font-size: $fontsize_max;
+  }
+}

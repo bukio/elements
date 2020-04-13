@@ -1,0 +1,31 @@
+//-------------------------------------
+// DEFAULT style & theme
+//-------------------------------------
+$line-height: 1.6 !default;
+$font-family: content-normal !default;
+$font-size: 14px !default;
+$text-indent: 1.5em !default;
+
+$color_primary: rgba(0, 0, 0, .87) !default;
+$color_secondary: rgba(0, 0, 0, .54) !default;
+$color_tertiary: rgba(0, 0, 0, .38) !default;
+//-------------------------------------
+
+$viewport-margin_min: 20px !default;
+$viewport-margin_max: 40px !default;
+
+$viewport-width_min: 320px !default;
+$viewport-width_max: 768px !default;
+
+$fontsize_min: 1.0em !default;
+$fontsize_max: 1.4em !default;
+
+$heading-fontsize_min: 1em / (1.250 * 1.250) !default;
+$heading-fontsize_multiplier: 1.250 !default;
+
+/* mobile block margins */
+$block-margin_top: .6em !default;
+$block-margin_bottom: 1.2em !default;
+
+$table-border-color: #CCC !default;
+$table-border-color-dark: #999 !default;

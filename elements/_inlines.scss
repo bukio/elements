@@ -1,0 +1,111 @@
+& {
+  // ----------------------------------------------
+  // inline: <i></i>
+  // ----------------------------------------------
+  i {
+    font-size: .85em;
+    vertical-align: top;
+    font-style: normal;
+    opacity: .54;
+    padding: 0 0.2em 0 0.1em;
+    letter-spacing: -.5px;
+  }
+
+  // ----------------------------------------------
+  // inline: <dfn></dfn>
+  // ----------------------------------------------
+  dfn {
+    font-style: normal;
+  }
+
+  // ----------------------------------------------
+  // inline: <code></code>
+  //
+  // (caution) `code` can be a block element.
+  // ----------------------------------------------
+  code {
+    font-family: content-fixed;
+    font-size: .925em;
+    padding: 0 .125em;
+    letter-spacing: -.5px;
+    hyphens: none;
+    tab-size: 2;
+    text-align: left;
+    word-spacing: -.125em;
+    background-color: rgba(0, 0, 0, .075);
+  }
+
+  /* CAUTION: within <pre> block element */
+  pre > code {
+    background: inherit;
+    padding: initial;
+    word-spacing: initial;
+    padding: initial;
+  }
+  
+  // ----------------------------------------------
+  // inline: <code></code>
+  // ----------------------------------------------
+  mark {
+    padding: 0 .125em;
+  }
+
+  // ----------------------------------------------
+  // inline: <kbd></kdb>
+  // ----------------------------------------------
+  kbd {
+    font-family: content-fixed;
+    font-size: .9em;
+    padding: 0 .25em;
+    background-color: rgba(0, 0, 0, .1);
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    box-shadow: 0 1px 1px rgba(0,0,0,.2),0 2px 0 0 rgba(255,255,255,.7) inset;
+    word-break: keep-all;
+    letter-spacing: -.5px;
+    word-spacing: -.125em;  /* relative to default .25em */
+  }
+
+  // ----------------------------------------------
+  // inline: <a href />
+  // ----------------------------------------------
+  a {
+    color: inherit;
+    text-decoration: none;
+    background-image: url('data:image/svg+xml;utf8,<svg preserveAspectRatio="none" viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="0" x2="1" y2="1" stroke="currentColor" /></svg>');
+    background-repeat: repeat-x;
+    background-size: 1px 1px;
+    background-position-x: 0;
+    background-position-y: calc(1em + 1px);
+  }
+
+  // ----------------------------------------------
+  // inline: <sup></sup>, <sub></sub>
+  // ----------------------------------------------
+  sup {
+    font-style: normal; /* disable italic in <sup>, <sub> */
+  }
+
+  /* links in headings */
+  @for $i from 1 through 6 {
+    h#{$i} a {
+      background-size: 1px 2px;
+      background-position-x: 0px;
+      background-position-y: calc(1em + 2px);
+    }
+
+    h#{$i} sup a {
+      font-weight: normal;
+    }
+    h#{$i} sub a {
+      font-weight: normal;
+    }
+  }
+
+  // ----------------------------------------------
+  // inline: <del></del>
+  // ----------------------------------------------
+  del {
+    opacity: .54;
+  }
+}

@@ -1,0 +1,48 @@
+//
+// Elements
+//
+// @use "elements" with (
+//   $content-container: "body > main"
+// );
+@use "variables" as *;
+@use "mixins" as *;
+@use "fonts";
+@use "layout";
+
+//---------------------------------------------
+// MODULE VARIABLES
+// --------------------------------------------
+$content-container: "body > main, body > main > main" !default;
+// --------------------------------------------
+
+
+#{$content-container} {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+
+  /* selection background */
+  ::selection {
+    background-color: rgba(0, 0, 0, .175);
+  }
+
+  /* hide scroll-bar */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+
+  /* enable vertical scrolling */
+  overflow-y: scroll;
+
+  -webkit-font-smoothing: antialiased;
+  word-break: break-all;
+}
+
+/* ELEMENTS */
+#{$content-container} {
+  @include fluid-content;
+
+  @import "blocks";
+  @import "inlines";
+}
