@@ -12,7 +12,7 @@
 //---------------------------------------------
 // MODULE VARIABLES
 // --------------------------------------------
-$content-container: "body > main, body > main > main" !default;
+$content-container: "body > main" !default;
 // --------------------------------------------
 
 
@@ -41,8 +41,8 @@ $content-container: "body > main, body > main > main" !default;
 
 /* ELEMENTS */
 #{$content-container} {
-  @include fluid-content;
+  @include fluid-fontsize;
 
-  @import "blocks";
   @import "inlines";
+  @import "blocks";
 }

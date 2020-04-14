@@ -1,9 +1,9 @@
 //
 // index.scss
 //
-@use "./elements/elements.scss" with (
-  $content-container: "body > main",
-);
+
+@use "./elements/elements.scss";
+
 
 /*
  * Demonstration Page

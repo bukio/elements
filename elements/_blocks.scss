@@ -1,36 +1,40 @@
 @use "sass:math" as math;
 @use "sass:list" as list;
 @use "variables" as *;
+@use "mixins" as *;
 
-/* blocks */
-$-headings: (h1, h2, h3, h4, h5, h6);
-$-blocks: join(
-  (p, ol, ul, dl, figure, blockquote, hr, pre, table),
-  $-headings
-);
+/* blocks for content set */
+& > header,
+& > main,
+& > footer {
 
-& {
+}
+
+/* blocks for main content */
+& > main {
   // ----------------------------------------------
-  // Block Margins
+  // Common
   // ----------------------------------------------
-  @each $elem in $-blocks {
+  @each $elem in $content-blocks {
     #{$elem} {
       padding: 0 0;
       box-sizing: border-box;
-      width: 100%;
 
       /* case: mobile */
-      margin: $block-margin_top 0 $block-margin_bottom 0;
+      margin-top: $block-margin_top;
+      margin-bottom: $block-margin_bottom;
 
       /* case: large display */
       @media all and (min-width: $viewport-width_max) {
         margin-bottom: $block-margin_top;
-      }  
+      }
+
+      @include fluid-margin;
     }
   }
 
   // ----------------------------------------------
-  // block: <figure></figure>
+  // FIGURE
   // ----------------------------------------------
   figure img {
     max-width: 100%;
@@ -58,7 +62,7 @@ $-blocks: join(
   // ----------------------------------------------
   // H1, H2, H3, H4, H5, H6
   // ----------------------------------------------
-  @each $elem in $-headings {
+  @each $elem in $content-headings {
     #{$elem} {
       line-height: $line-height * .8;
       font-weight: bold;
@@ -86,14 +90,23 @@ $-blocks: join(
     }
   }
 
-  /* special margin */
-  @each $block in $-blocks {
-    @each $heading in $-headings {
-      #{$block} + #{$heading} {
-        margin-top: 1.6em;
-        margin-bottom: .8em;
-      }  
-    }  
+  /* special margin between blocks */
+  @each $block in $content-blocks {
+    @if list.index($content-headings, $block) {
+      @each $heading in $content-headings {
+        #{$block} + #{$heading} {
+          margin-top: .8em;
+          margin-bottom: .8em;
+        }  
+      }    
+    } @else {
+      @each $heading in $content-headings {
+        #{$block} + #{$heading} {
+          margin-top: 1.6em;
+          margin-bottom: .8em;
+        }  
+      }    
+    }
   }
 
   // ----------------------------------------------
@@ -118,7 +131,7 @@ $-blocks: join(
   }
 
   // ----------------------------------------------
-  // <ul>, <ol>, <dl>
+  // UL, OL, DL
   // ----------------------------------------------
   ul {
     padding-left: 1em;
@@ -141,7 +154,7 @@ $-blocks: join(
   }
 
   // ----------------------------------------------
-  // <blockquote>
+  // BLOCKQUOTE
   // ----------------------------------------------
   blockquote {
     padding: 0 0 0 1em;
@@ -164,7 +177,7 @@ $-blocks: join(
   }
 
   // ----------------------------------------------
-  // <table>
+  // TABLE
   // ----------------------------------------------
   table {
     border-collapse: collapse;
@@ -202,12 +215,20 @@ $-blocks: join(
   } 
 
   // ----------------------------------------------
-  // <hr>
+  // PRE
+  // ----------------------------------------------
+  pre {
+    white-space: pre-wrap;
+  }
+
+  // ----------------------------------------------
+  // HR
   // ----------------------------------------------
   hr {
     border: 0;
     height: 1px;
-    margin: $block-margin_bottom 0;
+    margin-top: $block-margin_bottom;
+    margin-bottom: $block-margin_bottom;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), $color_tertiary, rgba(0, 0, 0, 0));
 
     /* special case: following paragraph */
