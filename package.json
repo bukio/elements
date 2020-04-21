@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel ./index.html",
-    "build": "parcel build ./index.html"
+    "build": "parcel build ./index.html --out-dir build --public-url ./",
+    "deploy": "rm -rf build/ && npm run build && gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
   },
   "homepage": "https://github.com/bukio/elements#readme",
   "devDependencies": {
+    "gh-pages": "^2.2.0",
     "modularscale-sass": "^3.0.10",
     "parcel-bundler": "^1.12.4",
     "posthtml-include": "^1.4.0",

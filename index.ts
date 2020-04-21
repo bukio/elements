@@ -10,6 +10,7 @@
   
   // ui elements
   const themeSelect: HTMLSelectElement = document.getElementById('theme-select') as HTMLSelectElement;
+  const fontSelect: HTMLSelectElement = document.getElementById('font-select') as HTMLSelectElement;
   const plusZoomBtn: HTMLElement = document.getElementById('zoom-plus');
   const minusZoomBtn: HTMLElement = document.getElementById('zoom-minus');
   const zoomLabel: HTMLElement = document.getElementById('zoom-label');
@@ -19,7 +20,12 @@
     contentContainer.dataset.theme = theme;
     themeSelect.value = theme;
   };
-  
+
+  const setFont = (font: 'default' | 'kopubbatang' | 'nanumgothic' | 'nanummyeongjo') => {
+    contentContainer.dataset.font = font;
+    fontSelect.value = font;
+  };
+
   const setZoom = (zoom: number) => {
     contentContainer.dataset.zoom = zoom.toString();
     zoomLabel.innerHTML = zoom.toString();
@@ -28,7 +34,11 @@
   const handleThemeSelectChange = (event) => {
     setTheme(themeSelect.value as any);
   };
-  
+
+  const handleFontSelectChange = (event) => {
+    setFont(fontSelect.value as any);
+  };
+
   const handleZoomBtnClick = (event) => {
     const isIncrease = event.target === plusZoomBtn;
     const currentValue = parseInt(contentContainer.dataset.zoom) || 100;
@@ -46,9 +56,11 @@
   
   // bind event
   themeSelect.addEventListener('change', handleThemeSelectChange);
+  fontSelect.addEventListener('change', handleFontSelectChange);
   [plusZoomBtn, minusZoomBtn].forEach((btn) => btn.addEventListener('click', handleZoomBtnClick));
   
   // init
   setTheme(themeSelect.value as any || 'light');
+  setFont(fontSelect.value as any || 'default');
   setZoom(parseInt(zoomLabel.innerText) || 100);
 })();
