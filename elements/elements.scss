@@ -41,8 +41,54 @@ $content-container: "body > main" !default;
 
 /* ELEMENTS */
 #{$content-container} {
-  @include fluid-fontsize;
-
   @import "inlines";
   @import "blocks";
+}
+
+/* ELEMENTS WITH THEME */
+#{$content-container} {
+  &[data-theme="light"] {
+    @import "theme.light";
+    
+    background-color: $background-color;
+    
+    @import "inlines";
+    @import "blocks";
+  }
+  
+  
+  &[data-theme="sepia"] {
+    @import "theme.sepia";
+    
+    background-color: $background-color;
+    
+    @import "inlines";
+    @import "blocks";
+  }
+  
+  &[data-theme="dark"] {
+    @import "theme.dark";
+    
+    background-color: $background-color;
+    
+    @import "inlines";
+    @import "blocks";
+  }
+}
+
+/* ZOOM */
+#{$content-container} {
+  $zoom-min: 0.5;
+  $zoom-max: 2;
+  $zoom-step: 0.1;
+
+  $i: $zoom-min;
+  
+  @while $i <= $zoom-max {
+    &[data-zoom="#{$i * 100}"] {
+      font-size: $font-size * $i;
+    }
+    
+    $i: $i + $zoom-step;
+  }
 }
