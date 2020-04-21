@@ -93,6 +93,7 @@ $content-footer: "body > main > footer";
         border-radius: 1px;
         padding: 6px 36px 6px 24px;
         font-size: 16px;
+        cursor: pointer;
 
         &:focus {
           outline: none;
@@ -103,6 +104,21 @@ $content-footer: "body > main > footer";
       flex: 0 0 auto;
       display: flex;
       align-items: center;
+      
+      #zoom-plus, #zoom-minus {
+        cursor: pointer;
+        user-select: none;
+        font-size: 30px;
+      }
+      
+      #zoom-label {
+        padding: 0 16px;
+        font-size: 24px;
+      }
+      
+      .percent::after {
+        content: '%';
+      }
     }
   }
 
@@ -131,10 +147,6 @@ $content-footer: "body > main > footer";
   flex-direction: row;
   margin: 0 0;
 
-  /* outline */
-  background-color: #dadce0;
-  padding: 1px 0;
-
   /* back to TOC */
   a.back {
     display: flex;
@@ -145,9 +157,8 @@ $content-footer: "body > main > footer";
     padding: 24px 24px 24px 72px;
     align-items: center;
     position: relative;
-    color: rgba(0, 0, 0, .87);
+    color: inherit;
     background: none;
-    background-color: white;
 
     &::before {
       @include icon();
@@ -170,7 +181,6 @@ $content-footer: "body > main > footer";
     }
 
     &:hover {
-      background-color: white;
       outline: 0;
       text-decoration: none;
     }
@@ -185,7 +195,6 @@ $content-footer: "body > main > footer";
     display: flex;
     position: relative;
     background: none;
-    background-color: white;
 
     &::before {
       @include icon();
@@ -204,13 +213,8 @@ $content-footer: "body > main > footer";
       transition: background-color .2s, border .2s;
     }
     &:hover {
-      background-color: white;
       text-decoration: none;
       outline: 0;
-
-      &:after {
-        background-color: rgba(32, 33, 36, 0.04);
-      }
     }
     .column {
       font-size: 24px;

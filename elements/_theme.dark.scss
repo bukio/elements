@@ -1,0 +1,9 @@
+@use "sass:color";
+
+$color_base: white;
+
+$color_primary: rgba($color_base, .87);
+$color_secondary: rgba($color_base, .54);
+$color_tertiary: rgba($color_base, .38);
+
+$background-color: #212121;
