@@ -92,3 +92,16 @@ $content-container: "body > main" !default;
     $i: $i + $zoom-step;
   }
 }
+
+/* ELEMENTS FONT */
+#{$content-container} {
+  &[data-font="kopubbatang"] {
+    font-family: 'KoPub Batang', serif;
+  }
+  &[data-font="nanumgothic"] {
+    font-family: 'Nanum Gothic', sans-serif;
+  }
+  &[data-font="nanummyeongjo"] {
+    font-family: 'Nanum Myeongjo', serif;
+  }
+}

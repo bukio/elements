@@ -98,6 +98,10 @@ $content-footer: "body > main > footer";
         &:focus {
           outline: none;
         }
+
+        & + select {
+          margin-left: 12px;
+        }
       }
     }
     .right {
