@@ -95,13 +95,13 @@ $content-container: "body > main" !default;
 
 /* ELEMENTS FONT */
 #{$content-container} {
-  &[data-font="kopubbatang"] * {
-    font-family: 'KoPub Batang', serif !important;
+  &[data-font="kopubbatang"] {
+    font-family: 'KoPub Batang', serif;
   }
-  &[data-font="nanumgothic"] * {
-    font-family: 'Nanum Gothic', sans-serif !important;
+  &[data-font="nanumgothic"] {
+    font-family: 'Nanum Gothic', sans-serif;
   }
-  &[data-font="nanummyeongjo"] * {
-    font-family: 'Nanum Myeongjo', serif !important;
+  &[data-font="nanummyeongjo"] {
+    font-family: 'Nanum Myeongjo', serif;
   }
 }
