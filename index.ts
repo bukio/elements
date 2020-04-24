@@ -54,10 +54,15 @@
     setZoom(newValue);
   };
   
+  const handleZoomLabelClick = (event) => {
+    setZoom(100);
+  }
+  
   // bind event
   themeSelect.addEventListener('change', handleThemeSelectChange);
   fontSelect.addEventListener('change', handleFontSelectChange);
   [plusZoomBtn, minusZoomBtn].forEach((btn) => btn.addEventListener('click', handleZoomBtnClick));
+  zoomLabel.addEventListener('click', handleZoomLabelClick);
   
   // init
   setTheme(themeSelect.value as any || 'light');
