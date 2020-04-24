@@ -1,6 +1,6 @@
 (() => {
   // constants
-  const ZOOM_MAX = 250;
+  const ZOOM_MAX = 200;
   const ZOOM_MIN = 50;
   const ZOOM_STEP = 10;
   const CONTENT_CONTAINER_SELECTOR = 'body > main';
