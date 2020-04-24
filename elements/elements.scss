@@ -33,7 +33,7 @@ $content-container: "body > main" !default;
   -ms-overflow-style: none;
 
   /* enable vertical scrolling */
-  overflow-y: scroll;
+  overflow-y: auto;
 
   -webkit-font-smoothing: antialiased;
   word-break: break-all;
