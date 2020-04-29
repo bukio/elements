@@ -57,10 +57,10 @@ body > main {
   word-break: break-all;
 }
 body > main ::-moz-selection {
-  background-color: rgba(0, 0, 0, 0.175);
+  background-color: #d2d2d2;
 }
 body > main ::selection {
-  background-color: rgba(0, 0, 0, 0.175);
+  background-color: #d2d2d2;
 }
 body > main::-webkit-scrollbar {
   display: none;
@@ -280,6 +280,13 @@ body > main > main p {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main > main p {
+    margin-bottom: 0.6em;
+  }
+}
+body > main > main > p {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -287,83 +294,78 @@ body > main > main p {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main > main p {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main > main p {
+  body > main > main > p {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main > main p {
+  body > main > main > p {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main > main p {
+  body > main > main > p {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main > main p {
+  body > main > main > p {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main > main p {
+  body > main > main > p {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main > main p {
+  body > main > main > p {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main > main p {
+  body > main > main > p {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main > main p {
+  body > main > main > p {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main > main p {
+  body > main > main > p {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main > main p {
+  body > main > main > p {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main > main p {
+  body > main > main > p {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -376,6 +378,13 @@ body > main > main ol {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main > main ol {
+    margin-bottom: 0.6em;
+  }
+}
+body > main > main > ol {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -383,83 +392,78 @@ body > main > main ol {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main > main ol {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main > main ol {
+  body > main > main > ol {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main > main ol {
+  body > main > main > ol {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main > main ol {
+  body > main > main > ol {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main > main ol {
+  body > main > main > ol {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main > main ol {
+  body > main > main > ol {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main > main ol {
+  body > main > main > ol {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main > main ol {
+  body > main > main > ol {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main > main ol {
+  body > main > main > ol {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main > main ol {
+  body > main > main > ol {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main > main ol {
+  body > main > main > ol {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main > main ol {
+  body > main > main > ol {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -472,6 +476,13 @@ body > main > main ul {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main > main ul {
+    margin-bottom: 0.6em;
+  }
+}
+body > main > main > ul {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -479,83 +490,78 @@ body > main > main ul {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main > main ul {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main > main ul {
+  body > main > main > ul {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main > main ul {
+  body > main > main > ul {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main > main ul {
+  body > main > main > ul {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main > main ul {
+  body > main > main > ul {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main > main ul {
+  body > main > main > ul {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main > main ul {
+  body > main > main > ul {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main > main ul {
+  body > main > main > ul {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main > main ul {
+  body > main > main > ul {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main > main ul {
+  body > main > main > ul {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main > main ul {
+  body > main > main > ul {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main > main ul {
+  body > main > main > ul {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -568,6 +574,13 @@ body > main > main dl {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main > main dl {
+    margin-bottom: 0.6em;
+  }
+}
+body > main > main > dl {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -575,83 +588,78 @@ body > main > main dl {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main > main dl {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main > main dl {
+  body > main > main > dl {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main > main dl {
+  body > main > main > dl {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main > main dl {
+  body > main > main > dl {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main > main dl {
+  body > main > main > dl {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main > main dl {
+  body > main > main > dl {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main > main dl {
+  body > main > main > dl {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main > main dl {
+  body > main > main > dl {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main > main dl {
+  body > main > main > dl {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main > main dl {
+  body > main > main > dl {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main > main dl {
+  body > main > main > dl {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main > main dl {
+  body > main > main > dl {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -664,6 +672,13 @@ body > main > main figure {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main > main figure {
+    margin-bottom: 0.6em;
+  }
+}
+body > main > main > figure {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -671,83 +686,78 @@ body > main > main figure {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main > main figure {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main > main figure {
+  body > main > main > figure {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main > main figure {
+  body > main > main > figure {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main > main figure {
+  body > main > main > figure {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main > main figure {
+  body > main > main > figure {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main > main figure {
+  body > main > main > figure {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main > main figure {
+  body > main > main > figure {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main > main figure {
+  body > main > main > figure {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main > main figure {
+  body > main > main > figure {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main > main figure {
+  body > main > main > figure {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main > main figure {
+  body > main > main > figure {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main > main figure {
+  body > main > main > figure {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -760,6 +770,13 @@ body > main > main blockquote {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main > main blockquote {
+    margin-bottom: 0.6em;
+  }
+}
+body > main > main > blockquote {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -767,83 +784,78 @@ body > main > main blockquote {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main > main blockquote {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main > main blockquote {
+  body > main > main > blockquote {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main > main blockquote {
+  body > main > main > blockquote {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main > main blockquote {
+  body > main > main > blockquote {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main > main blockquote {
+  body > main > main > blockquote {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main > main blockquote {
+  body > main > main > blockquote {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main > main blockquote {
+  body > main > main > blockquote {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main > main blockquote {
+  body > main > main > blockquote {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main > main blockquote {
+  body > main > main > blockquote {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main > main blockquote {
+  body > main > main > blockquote {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main > main blockquote {
+  body > main > main > blockquote {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main > main blockquote {
+  body > main > main > blockquote {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -856,6 +868,13 @@ body > main > main hr {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main > main hr {
+    margin-bottom: 0.6em;
+  }
+}
+body > main > main > hr {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -863,83 +882,78 @@ body > main > main hr {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main > main hr {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main > main hr {
+  body > main > main > hr {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main > main hr {
+  body > main > main > hr {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main > main hr {
+  body > main > main > hr {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main > main hr {
+  body > main > main > hr {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main > main hr {
+  body > main > main > hr {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main > main hr {
+  body > main > main > hr {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main > main hr {
+  body > main > main > hr {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main > main hr {
+  body > main > main > hr {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main > main hr {
+  body > main > main > hr {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main > main hr {
+  body > main > main > hr {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main > main hr {
+  body > main > main > hr {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -952,6 +966,13 @@ body > main > main pre {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main > main pre {
+    margin-bottom: 0.6em;
+  }
+}
+body > main > main > pre {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -959,83 +980,78 @@ body > main > main pre {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main > main pre {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main > main pre {
+  body > main > main > pre {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main > main pre {
+  body > main > main > pre {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main > main pre {
+  body > main > main > pre {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main > main pre {
+  body > main > main > pre {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main > main pre {
+  body > main > main > pre {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main > main pre {
+  body > main > main > pre {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main > main pre {
+  body > main > main > pre {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main > main pre {
+  body > main > main > pre {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main > main pre {
+  body > main > main > pre {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main > main pre {
+  body > main > main > pre {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main > main pre {
+  body > main > main > pre {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -1048,6 +1064,13 @@ body > main > main table {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main > main table {
+    margin-bottom: 0.6em;
+  }
+}
+body > main > main > table {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -1055,83 +1078,78 @@ body > main > main table {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main > main table {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main > main table {
+  body > main > main > table {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main > main table {
+  body > main > main > table {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main > main table {
+  body > main > main > table {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main > main table {
+  body > main > main > table {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main > main table {
+  body > main > main > table {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main > main table {
+  body > main > main > table {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main > main table {
+  body > main > main > table {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main > main table {
+  body > main > main > table {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main > main table {
+  body > main > main > table {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main > main table {
+  body > main > main > table {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main > main table {
+  body > main > main > table {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -1144,6 +1162,13 @@ body > main > main h1 {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main > main h1 {
+    margin-bottom: 0.6em;
+  }
+}
+body > main > main > h1 {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -1151,83 +1176,78 @@ body > main > main h1 {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main > main h1 {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main > main h1 {
+  body > main > main > h1 {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main > main h1 {
+  body > main > main > h1 {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main > main h1 {
+  body > main > main > h1 {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main > main h1 {
+  body > main > main > h1 {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main > main h1 {
+  body > main > main > h1 {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main > main h1 {
+  body > main > main > h1 {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main > main h1 {
+  body > main > main > h1 {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main > main h1 {
+  body > main > main > h1 {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main > main h1 {
+  body > main > main > h1 {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main > main h1 {
+  body > main > main > h1 {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main > main h1 {
+  body > main > main > h1 {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -1240,6 +1260,13 @@ body > main > main h2 {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main > main h2 {
+    margin-bottom: 0.6em;
+  }
+}
+body > main > main > h2 {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -1247,83 +1274,78 @@ body > main > main h2 {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main > main h2 {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main > main h2 {
+  body > main > main > h2 {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main > main h2 {
+  body > main > main > h2 {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main > main h2 {
+  body > main > main > h2 {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main > main h2 {
+  body > main > main > h2 {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main > main h2 {
+  body > main > main > h2 {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main > main h2 {
+  body > main > main > h2 {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main > main h2 {
+  body > main > main > h2 {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main > main h2 {
+  body > main > main > h2 {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main > main h2 {
+  body > main > main > h2 {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main > main h2 {
+  body > main > main > h2 {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main > main h2 {
+  body > main > main > h2 {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -1336,6 +1358,13 @@ body > main > main h3 {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main > main h3 {
+    margin-bottom: 0.6em;
+  }
+}
+body > main > main > h3 {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -1343,83 +1372,78 @@ body > main > main h3 {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main > main h3 {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main > main h3 {
+  body > main > main > h3 {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main > main h3 {
+  body > main > main > h3 {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main > main h3 {
+  body > main > main > h3 {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main > main h3 {
+  body > main > main > h3 {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main > main h3 {
+  body > main > main > h3 {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main > main h3 {
+  body > main > main > h3 {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main > main h3 {
+  body > main > main > h3 {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main > main h3 {
+  body > main > main > h3 {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main > main h3 {
+  body > main > main > h3 {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main > main h3 {
+  body > main > main > h3 {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main > main h3 {
+  body > main > main > h3 {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -1432,6 +1456,13 @@ body > main > main h4 {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main > main h4 {
+    margin-bottom: 0.6em;
+  }
+}
+body > main > main > h4 {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -1439,83 +1470,78 @@ body > main > main h4 {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main > main h4 {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main > main h4 {
+  body > main > main > h4 {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main > main h4 {
+  body > main > main > h4 {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main > main h4 {
+  body > main > main > h4 {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main > main h4 {
+  body > main > main > h4 {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main > main h4 {
+  body > main > main > h4 {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main > main h4 {
+  body > main > main > h4 {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main > main h4 {
+  body > main > main > h4 {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main > main h4 {
+  body > main > main > h4 {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main > main h4 {
+  body > main > main > h4 {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main > main h4 {
+  body > main > main > h4 {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main > main h4 {
+  body > main > main > h4 {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -1528,6 +1554,13 @@ body > main > main h5 {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main > main h5 {
+    margin-bottom: 0.6em;
+  }
+}
+body > main > main > h5 {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -1535,83 +1568,78 @@ body > main > main h5 {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main > main h5 {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main > main h5 {
+  body > main > main > h5 {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main > main h5 {
+  body > main > main > h5 {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main > main h5 {
+  body > main > main > h5 {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main > main h5 {
+  body > main > main > h5 {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main > main h5 {
+  body > main > main > h5 {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main > main h5 {
+  body > main > main > h5 {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main > main h5 {
+  body > main > main > h5 {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main > main h5 {
+  body > main > main > h5 {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main > main h5 {
+  body > main > main > h5 {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main > main h5 {
+  body > main > main > h5 {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main > main h5 {
+  body > main > main > h5 {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -1624,6 +1652,13 @@ body > main > main h6 {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main > main h6 {
+    margin-bottom: 0.6em;
+  }
+}
+body > main > main > h6 {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -1631,83 +1666,78 @@ body > main > main h6 {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main > main h6 {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main > main h6 {
+  body > main > main > h6 {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main > main h6 {
+  body > main > main > h6 {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main > main h6 {
+  body > main > main > h6 {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main > main h6 {
+  body > main > main > h6 {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main > main h6 {
+  body > main > main > h6 {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main > main h6 {
+  body > main > main > h6 {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main > main h6 {
+  body > main > main > h6 {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main > main h6 {
+  body > main > main > h6 {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main > main h6 {
+  body > main > main > h6 {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main > main h6 {
+  body > main > main > h6 {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main > main h6 {
+  body > main > main > h6 {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -2522,6 +2552,13 @@ body > main[data-theme=light] > main p {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main[data-theme=light] > main p {
+    margin-bottom: 0.6em;
+  }
+}
+body > main[data-theme=light] > main > p {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -2529,83 +2566,78 @@ body > main[data-theme=light] > main p {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main[data-theme=light] > main p {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main[data-theme=light] > main p {
+  body > main[data-theme=light] > main > p {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main[data-theme=light] > main p {
+  body > main[data-theme=light] > main > p {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main[data-theme=light] > main p {
+  body > main[data-theme=light] > main > p {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main[data-theme=light] > main p {
+  body > main[data-theme=light] > main > p {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main[data-theme=light] > main p {
+  body > main[data-theme=light] > main > p {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main[data-theme=light] > main p {
+  body > main[data-theme=light] > main > p {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main[data-theme=light] > main p {
+  body > main[data-theme=light] > main > p {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main[data-theme=light] > main p {
+  body > main[data-theme=light] > main > p {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main[data-theme=light] > main p {
+  body > main[data-theme=light] > main > p {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main[data-theme=light] > main p {
+  body > main[data-theme=light] > main > p {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main[data-theme=light] > main p {
+  body > main[data-theme=light] > main > p {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -2618,6 +2650,13 @@ body > main[data-theme=light] > main ol {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main[data-theme=light] > main ol {
+    margin-bottom: 0.6em;
+  }
+}
+body > main[data-theme=light] > main > ol {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -2625,83 +2664,78 @@ body > main[data-theme=light] > main ol {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main[data-theme=light] > main ol {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main[data-theme=light] > main ol {
+  body > main[data-theme=light] > main > ol {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main[data-theme=light] > main ol {
+  body > main[data-theme=light] > main > ol {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main[data-theme=light] > main ol {
+  body > main[data-theme=light] > main > ol {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main[data-theme=light] > main ol {
+  body > main[data-theme=light] > main > ol {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main[data-theme=light] > main ol {
+  body > main[data-theme=light] > main > ol {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main[data-theme=light] > main ol {
+  body > main[data-theme=light] > main > ol {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main[data-theme=light] > main ol {
+  body > main[data-theme=light] > main > ol {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main[data-theme=light] > main ol {
+  body > main[data-theme=light] > main > ol {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main[data-theme=light] > main ol {
+  body > main[data-theme=light] > main > ol {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main[data-theme=light] > main ol {
+  body > main[data-theme=light] > main > ol {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main[data-theme=light] > main ol {
+  body > main[data-theme=light] > main > ol {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -2714,6 +2748,13 @@ body > main[data-theme=light] > main ul {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main[data-theme=light] > main ul {
+    margin-bottom: 0.6em;
+  }
+}
+body > main[data-theme=light] > main > ul {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -2721,83 +2762,78 @@ body > main[data-theme=light] > main ul {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main[data-theme=light] > main ul {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main[data-theme=light] > main ul {
+  body > main[data-theme=light] > main > ul {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main[data-theme=light] > main ul {
+  body > main[data-theme=light] > main > ul {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main[data-theme=light] > main ul {
+  body > main[data-theme=light] > main > ul {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main[data-theme=light] > main ul {
+  body > main[data-theme=light] > main > ul {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main[data-theme=light] > main ul {
+  body > main[data-theme=light] > main > ul {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main[data-theme=light] > main ul {
+  body > main[data-theme=light] > main > ul {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main[data-theme=light] > main ul {
+  body > main[data-theme=light] > main > ul {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main[data-theme=light] > main ul {
+  body > main[data-theme=light] > main > ul {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main[data-theme=light] > main ul {
+  body > main[data-theme=light] > main > ul {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main[data-theme=light] > main ul {
+  body > main[data-theme=light] > main > ul {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main[data-theme=light] > main ul {
+  body > main[data-theme=light] > main > ul {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -2810,6 +2846,13 @@ body > main[data-theme=light] > main dl {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main[data-theme=light] > main dl {
+    margin-bottom: 0.6em;
+  }
+}
+body > main[data-theme=light] > main > dl {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -2817,83 +2860,78 @@ body > main[data-theme=light] > main dl {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main[data-theme=light] > main dl {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main[data-theme=light] > main dl {
+  body > main[data-theme=light] > main > dl {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main[data-theme=light] > main dl {
+  body > main[data-theme=light] > main > dl {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main[data-theme=light] > main dl {
+  body > main[data-theme=light] > main > dl {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main[data-theme=light] > main dl {
+  body > main[data-theme=light] > main > dl {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main[data-theme=light] > main dl {
+  body > main[data-theme=light] > main > dl {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main[data-theme=light] > main dl {
+  body > main[data-theme=light] > main > dl {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main[data-theme=light] > main dl {
+  body > main[data-theme=light] > main > dl {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main[data-theme=light] > main dl {
+  body > main[data-theme=light] > main > dl {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main[data-theme=light] > main dl {
+  body > main[data-theme=light] > main > dl {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main[data-theme=light] > main dl {
+  body > main[data-theme=light] > main > dl {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main[data-theme=light] > main dl {
+  body > main[data-theme=light] > main > dl {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -2906,6 +2944,13 @@ body > main[data-theme=light] > main figure {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main[data-theme=light] > main figure {
+    margin-bottom: 0.6em;
+  }
+}
+body > main[data-theme=light] > main > figure {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -2913,83 +2958,78 @@ body > main[data-theme=light] > main figure {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main[data-theme=light] > main figure {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main[data-theme=light] > main figure {
+  body > main[data-theme=light] > main > figure {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main[data-theme=light] > main figure {
+  body > main[data-theme=light] > main > figure {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main[data-theme=light] > main figure {
+  body > main[data-theme=light] > main > figure {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main[data-theme=light] > main figure {
+  body > main[data-theme=light] > main > figure {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main[data-theme=light] > main figure {
+  body > main[data-theme=light] > main > figure {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main[data-theme=light] > main figure {
+  body > main[data-theme=light] > main > figure {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main[data-theme=light] > main figure {
+  body > main[data-theme=light] > main > figure {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main[data-theme=light] > main figure {
+  body > main[data-theme=light] > main > figure {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main[data-theme=light] > main figure {
+  body > main[data-theme=light] > main > figure {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main[data-theme=light] > main figure {
+  body > main[data-theme=light] > main > figure {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main[data-theme=light] > main figure {
+  body > main[data-theme=light] > main > figure {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -3002,6 +3042,13 @@ body > main[data-theme=light] > main blockquote {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main[data-theme=light] > main blockquote {
+    margin-bottom: 0.6em;
+  }
+}
+body > main[data-theme=light] > main > blockquote {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -3009,83 +3056,78 @@ body > main[data-theme=light] > main blockquote {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main[data-theme=light] > main blockquote {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main[data-theme=light] > main blockquote {
+  body > main[data-theme=light] > main > blockquote {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main[data-theme=light] > main blockquote {
+  body > main[data-theme=light] > main > blockquote {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main[data-theme=light] > main blockquote {
+  body > main[data-theme=light] > main > blockquote {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main[data-theme=light] > main blockquote {
+  body > main[data-theme=light] > main > blockquote {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main[data-theme=light] > main blockquote {
+  body > main[data-theme=light] > main > blockquote {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main[data-theme=light] > main blockquote {
+  body > main[data-theme=light] > main > blockquote {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main[data-theme=light] > main blockquote {
+  body > main[data-theme=light] > main > blockquote {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main[data-theme=light] > main blockquote {
+  body > main[data-theme=light] > main > blockquote {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main[data-theme=light] > main blockquote {
+  body > main[data-theme=light] > main > blockquote {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main[data-theme=light] > main blockquote {
+  body > main[data-theme=light] > main > blockquote {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main[data-theme=light] > main blockquote {
+  body > main[data-theme=light] > main > blockquote {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -3098,6 +3140,13 @@ body > main[data-theme=light] > main hr {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main[data-theme=light] > main hr {
+    margin-bottom: 0.6em;
+  }
+}
+body > main[data-theme=light] > main > hr {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -3105,83 +3154,78 @@ body > main[data-theme=light] > main hr {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main[data-theme=light] > main hr {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main[data-theme=light] > main hr {
+  body > main[data-theme=light] > main > hr {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main[data-theme=light] > main hr {
+  body > main[data-theme=light] > main > hr {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main[data-theme=light] > main hr {
+  body > main[data-theme=light] > main > hr {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main[data-theme=light] > main hr {
+  body > main[data-theme=light] > main > hr {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main[data-theme=light] > main hr {
+  body > main[data-theme=light] > main > hr {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main[data-theme=light] > main hr {
+  body > main[data-theme=light] > main > hr {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main[data-theme=light] > main hr {
+  body > main[data-theme=light] > main > hr {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main[data-theme=light] > main hr {
+  body > main[data-theme=light] > main > hr {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main[data-theme=light] > main hr {
+  body > main[data-theme=light] > main > hr {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main[data-theme=light] > main hr {
+  body > main[data-theme=light] > main > hr {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main[data-theme=light] > main hr {
+  body > main[data-theme=light] > main > hr {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -3194,6 +3238,13 @@ body > main[data-theme=light] > main pre {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main[data-theme=light] > main pre {
+    margin-bottom: 0.6em;
+  }
+}
+body > main[data-theme=light] > main > pre {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -3201,83 +3252,78 @@ body > main[data-theme=light] > main pre {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main[data-theme=light] > main pre {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main[data-theme=light] > main pre {
+  body > main[data-theme=light] > main > pre {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main[data-theme=light] > main pre {
+  body > main[data-theme=light] > main > pre {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main[data-theme=light] > main pre {
+  body > main[data-theme=light] > main > pre {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main[data-theme=light] > main pre {
+  body > main[data-theme=light] > main > pre {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main[data-theme=light] > main pre {
+  body > main[data-theme=light] > main > pre {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main[data-theme=light] > main pre {
+  body > main[data-theme=light] > main > pre {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main[data-theme=light] > main pre {
+  body > main[data-theme=light] > main > pre {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main[data-theme=light] > main pre {
+  body > main[data-theme=light] > main > pre {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main[data-theme=light] > main pre {
+  body > main[data-theme=light] > main > pre {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main[data-theme=light] > main pre {
+  body > main[data-theme=light] > main > pre {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main[data-theme=light] > main pre {
+  body > main[data-theme=light] > main > pre {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -3290,6 +3336,13 @@ body > main[data-theme=light] > main table {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main[data-theme=light] > main table {
+    margin-bottom: 0.6em;
+  }
+}
+body > main[data-theme=light] > main > table {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -3297,83 +3350,78 @@ body > main[data-theme=light] > main table {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main[data-theme=light] > main table {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main[data-theme=light] > main table {
+  body > main[data-theme=light] > main > table {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main[data-theme=light] > main table {
+  body > main[data-theme=light] > main > table {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main[data-theme=light] > main table {
+  body > main[data-theme=light] > main > table {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main[data-theme=light] > main table {
+  body > main[data-theme=light] > main > table {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main[data-theme=light] > main table {
+  body > main[data-theme=light] > main > table {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main[data-theme=light] > main table {
+  body > main[data-theme=light] > main > table {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main[data-theme=light] > main table {
+  body > main[data-theme=light] > main > table {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main[data-theme=light] > main table {
+  body > main[data-theme=light] > main > table {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main[data-theme=light] > main table {
+  body > main[data-theme=light] > main > table {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main[data-theme=light] > main table {
+  body > main[data-theme=light] > main > table {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main[data-theme=light] > main table {
+  body > main[data-theme=light] > main > table {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -3386,6 +3434,13 @@ body > main[data-theme=light] > main h1 {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main[data-theme=light] > main h1 {
+    margin-bottom: 0.6em;
+  }
+}
+body > main[data-theme=light] > main > h1 {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -3393,83 +3448,78 @@ body > main[data-theme=light] > main h1 {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main[data-theme=light] > main h1 {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main[data-theme=light] > main h1 {
+  body > main[data-theme=light] > main > h1 {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main[data-theme=light] > main h1 {
+  body > main[data-theme=light] > main > h1 {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main[data-theme=light] > main h1 {
+  body > main[data-theme=light] > main > h1 {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main[data-theme=light] > main h1 {
+  body > main[data-theme=light] > main > h1 {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main[data-theme=light] > main h1 {
+  body > main[data-theme=light] > main > h1 {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main[data-theme=light] > main h1 {
+  body > main[data-theme=light] > main > h1 {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main[data-theme=light] > main h1 {
+  body > main[data-theme=light] > main > h1 {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main[data-theme=light] > main h1 {
+  body > main[data-theme=light] > main > h1 {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main[data-theme=light] > main h1 {
+  body > main[data-theme=light] > main > h1 {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main[data-theme=light] > main h1 {
+  body > main[data-theme=light] > main > h1 {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main[data-theme=light] > main h1 {
+  body > main[data-theme=light] > main > h1 {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -3482,6 +3532,13 @@ body > main[data-theme=light] > main h2 {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main[data-theme=light] > main h2 {
+    margin-bottom: 0.6em;
+  }
+}
+body > main[data-theme=light] > main > h2 {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -3489,83 +3546,78 @@ body > main[data-theme=light] > main h2 {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main[data-theme=light] > main h2 {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main[data-theme=light] > main h2 {
+  body > main[data-theme=light] > main > h2 {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main[data-theme=light] > main h2 {
+  body > main[data-theme=light] > main > h2 {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main[data-theme=light] > main h2 {
+  body > main[data-theme=light] > main > h2 {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main[data-theme=light] > main h2 {
+  body > main[data-theme=light] > main > h2 {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main[data-theme=light] > main h2 {
+  body > main[data-theme=light] > main > h2 {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main[data-theme=light] > main h2 {
+  body > main[data-theme=light] > main > h2 {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main[data-theme=light] > main h2 {
+  body > main[data-theme=light] > main > h2 {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main[data-theme=light] > main h2 {
+  body > main[data-theme=light] > main > h2 {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main[data-theme=light] > main h2 {
+  body > main[data-theme=light] > main > h2 {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main[data-theme=light] > main h2 {
+  body > main[data-theme=light] > main > h2 {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main[data-theme=light] > main h2 {
+  body > main[data-theme=light] > main > h2 {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -3578,6 +3630,13 @@ body > main[data-theme=light] > main h3 {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main[data-theme=light] > main h3 {
+    margin-bottom: 0.6em;
+  }
+}
+body > main[data-theme=light] > main > h3 {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -3585,83 +3644,78 @@ body > main[data-theme=light] > main h3 {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main[data-theme=light] > main h3 {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main[data-theme=light] > main h3 {
+  body > main[data-theme=light] > main > h3 {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main[data-theme=light] > main h3 {
+  body > main[data-theme=light] > main > h3 {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main[data-theme=light] > main h3 {
+  body > main[data-theme=light] > main > h3 {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main[data-theme=light] > main h3 {
+  body > main[data-theme=light] > main > h3 {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main[data-theme=light] > main h3 {
+  body > main[data-theme=light] > main > h3 {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main[data-theme=light] > main h3 {
+  body > main[data-theme=light] > main > h3 {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main[data-theme=light] > main h3 {
+  body > main[data-theme=light] > main > h3 {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main[data-theme=light] > main h3 {
+  body > main[data-theme=light] > main > h3 {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main[data-theme=light] > main h3 {
+  body > main[data-theme=light] > main > h3 {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main[data-theme=light] > main h3 {
+  body > main[data-theme=light] > main > h3 {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main[data-theme=light] > main h3 {
+  body > main[data-theme=light] > main > h3 {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -3674,6 +3728,13 @@ body > main[data-theme=light] > main h4 {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main[data-theme=light] > main h4 {
+    margin-bottom: 0.6em;
+  }
+}
+body > main[data-theme=light] > main > h4 {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -3681,83 +3742,78 @@ body > main[data-theme=light] > main h4 {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main[data-theme=light] > main h4 {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main[data-theme=light] > main h4 {
+  body > main[data-theme=light] > main > h4 {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main[data-theme=light] > main h4 {
+  body > main[data-theme=light] > main > h4 {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main[data-theme=light] > main h4 {
+  body > main[data-theme=light] > main > h4 {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main[data-theme=light] > main h4 {
+  body > main[data-theme=light] > main > h4 {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main[data-theme=light] > main h4 {
+  body > main[data-theme=light] > main > h4 {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main[data-theme=light] > main h4 {
+  body > main[data-theme=light] > main > h4 {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main[data-theme=light] > main h4 {
+  body > main[data-theme=light] > main > h4 {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main[data-theme=light] > main h4 {
+  body > main[data-theme=light] > main > h4 {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main[data-theme=light] > main h4 {
+  body > main[data-theme=light] > main > h4 {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main[data-theme=light] > main h4 {
+  body > main[data-theme=light] > main > h4 {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main[data-theme=light] > main h4 {
+  body > main[data-theme=light] > main > h4 {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -3770,6 +3826,13 @@ body > main[data-theme=light] > main h5 {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main[data-theme=light] > main h5 {
+    margin-bottom: 0.6em;
+  }
+}
+body > main[data-theme=light] > main > h5 {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -3777,83 +3840,78 @@ body > main[data-theme=light] > main h5 {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main[data-theme=light] > main h5 {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main[data-theme=light] > main h5 {
+  body > main[data-theme=light] > main > h5 {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main[data-theme=light] > main h5 {
+  body > main[data-theme=light] > main > h5 {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main[data-theme=light] > main h5 {
+  body > main[data-theme=light] > main > h5 {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main[data-theme=light] > main h5 {
+  body > main[data-theme=light] > main > h5 {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main[data-theme=light] > main h5 {
+  body > main[data-theme=light] > main > h5 {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main[data-theme=light] > main h5 {
+  body > main[data-theme=light] > main > h5 {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main[data-theme=light] > main h5 {
+  body > main[data-theme=light] > main > h5 {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main[data-theme=light] > main h5 {
+  body > main[data-theme=light] > main > h5 {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main[data-theme=light] > main h5 {
+  body > main[data-theme=light] > main > h5 {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main[data-theme=light] > main h5 {
+  body > main[data-theme=light] > main > h5 {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main[data-theme=light] > main h5 {
+  body > main[data-theme=light] > main > h5 {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -3866,6 +3924,13 @@ body > main[data-theme=light] > main h6 {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main[data-theme=light] > main h6 {
+    margin-bottom: 0.6em;
+  }
+}
+body > main[data-theme=light] > main > h6 {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -3873,83 +3938,78 @@ body > main[data-theme=light] > main h6 {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main[data-theme=light] > main h6 {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main[data-theme=light] > main h6 {
+  body > main[data-theme=light] > main > h6 {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main[data-theme=light] > main h6 {
+  body > main[data-theme=light] > main > h6 {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main[data-theme=light] > main h6 {
+  body > main[data-theme=light] > main > h6 {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main[data-theme=light] > main h6 {
+  body > main[data-theme=light] > main > h6 {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main[data-theme=light] > main h6 {
+  body > main[data-theme=light] > main > h6 {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main[data-theme=light] > main h6 {
+  body > main[data-theme=light] > main > h6 {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main[data-theme=light] > main h6 {
+  body > main[data-theme=light] > main > h6 {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main[data-theme=light] > main h6 {
+  body > main[data-theme=light] > main > h6 {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main[data-theme=light] > main h6 {
+  body > main[data-theme=light] > main > h6 {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main[data-theme=light] > main h6 {
+  body > main[data-theme=light] > main > h6 {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main[data-theme=light] > main h6 {
+  body > main[data-theme=light] > main > h6 {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -4762,6 +4822,13 @@ body > main[data-theme=sepia] > main p {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main[data-theme=sepia] > main p {
+    margin-bottom: 0.6em;
+  }
+}
+body > main[data-theme=sepia] > main > p {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -4769,83 +4836,78 @@ body > main[data-theme=sepia] > main p {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main[data-theme=sepia] > main p {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main[data-theme=sepia] > main p {
+  body > main[data-theme=sepia] > main > p {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main[data-theme=sepia] > main p {
+  body > main[data-theme=sepia] > main > p {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main[data-theme=sepia] > main p {
+  body > main[data-theme=sepia] > main > p {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main[data-theme=sepia] > main p {
+  body > main[data-theme=sepia] > main > p {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main[data-theme=sepia] > main p {
+  body > main[data-theme=sepia] > main > p {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main[data-theme=sepia] > main p {
+  body > main[data-theme=sepia] > main > p {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main[data-theme=sepia] > main p {
+  body > main[data-theme=sepia] > main > p {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main[data-theme=sepia] > main p {
+  body > main[data-theme=sepia] > main > p {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main[data-theme=sepia] > main p {
+  body > main[data-theme=sepia] > main > p {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main[data-theme=sepia] > main p {
+  body > main[data-theme=sepia] > main > p {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main[data-theme=sepia] > main p {
+  body > main[data-theme=sepia] > main > p {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -4858,6 +4920,13 @@ body > main[data-theme=sepia] > main ol {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main[data-theme=sepia] > main ol {
+    margin-bottom: 0.6em;
+  }
+}
+body > main[data-theme=sepia] > main > ol {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -4865,83 +4934,78 @@ body > main[data-theme=sepia] > main ol {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main[data-theme=sepia] > main ol {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main[data-theme=sepia] > main ol {
+  body > main[data-theme=sepia] > main > ol {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main[data-theme=sepia] > main ol {
+  body > main[data-theme=sepia] > main > ol {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main[data-theme=sepia] > main ol {
+  body > main[data-theme=sepia] > main > ol {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main[data-theme=sepia] > main ol {
+  body > main[data-theme=sepia] > main > ol {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main[data-theme=sepia] > main ol {
+  body > main[data-theme=sepia] > main > ol {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main[data-theme=sepia] > main ol {
+  body > main[data-theme=sepia] > main > ol {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main[data-theme=sepia] > main ol {
+  body > main[data-theme=sepia] > main > ol {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main[data-theme=sepia] > main ol {
+  body > main[data-theme=sepia] > main > ol {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main[data-theme=sepia] > main ol {
+  body > main[data-theme=sepia] > main > ol {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main[data-theme=sepia] > main ol {
+  body > main[data-theme=sepia] > main > ol {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main[data-theme=sepia] > main ol {
+  body > main[data-theme=sepia] > main > ol {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -4954,6 +5018,13 @@ body > main[data-theme=sepia] > main ul {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main[data-theme=sepia] > main ul {
+    margin-bottom: 0.6em;
+  }
+}
+body > main[data-theme=sepia] > main > ul {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -4961,83 +5032,78 @@ body > main[data-theme=sepia] > main ul {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main[data-theme=sepia] > main ul {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main[data-theme=sepia] > main ul {
+  body > main[data-theme=sepia] > main > ul {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main[data-theme=sepia] > main ul {
+  body > main[data-theme=sepia] > main > ul {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main[data-theme=sepia] > main ul {
+  body > main[data-theme=sepia] > main > ul {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main[data-theme=sepia] > main ul {
+  body > main[data-theme=sepia] > main > ul {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main[data-theme=sepia] > main ul {
+  body > main[data-theme=sepia] > main > ul {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main[data-theme=sepia] > main ul {
+  body > main[data-theme=sepia] > main > ul {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main[data-theme=sepia] > main ul {
+  body > main[data-theme=sepia] > main > ul {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main[data-theme=sepia] > main ul {
+  body > main[data-theme=sepia] > main > ul {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main[data-theme=sepia] > main ul {
+  body > main[data-theme=sepia] > main > ul {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main[data-theme=sepia] > main ul {
+  body > main[data-theme=sepia] > main > ul {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main[data-theme=sepia] > main ul {
+  body > main[data-theme=sepia] > main > ul {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -5050,6 +5116,13 @@ body > main[data-theme=sepia] > main dl {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main[data-theme=sepia] > main dl {
+    margin-bottom: 0.6em;
+  }
+}
+body > main[data-theme=sepia] > main > dl {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -5057,83 +5130,78 @@ body > main[data-theme=sepia] > main dl {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main[data-theme=sepia] > main dl {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main[data-theme=sepia] > main dl {
+  body > main[data-theme=sepia] > main > dl {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main[data-theme=sepia] > main dl {
+  body > main[data-theme=sepia] > main > dl {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main[data-theme=sepia] > main dl {
+  body > main[data-theme=sepia] > main > dl {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main[data-theme=sepia] > main dl {
+  body > main[data-theme=sepia] > main > dl {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main[data-theme=sepia] > main dl {
+  body > main[data-theme=sepia] > main > dl {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main[data-theme=sepia] > main dl {
+  body > main[data-theme=sepia] > main > dl {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main[data-theme=sepia] > main dl {
+  body > main[data-theme=sepia] > main > dl {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main[data-theme=sepia] > main dl {
+  body > main[data-theme=sepia] > main > dl {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main[data-theme=sepia] > main dl {
+  body > main[data-theme=sepia] > main > dl {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main[data-theme=sepia] > main dl {
+  body > main[data-theme=sepia] > main > dl {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main[data-theme=sepia] > main dl {
+  body > main[data-theme=sepia] > main > dl {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -5146,6 +5214,13 @@ body > main[data-theme=sepia] > main figure {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main[data-theme=sepia] > main figure {
+    margin-bottom: 0.6em;
+  }
+}
+body > main[data-theme=sepia] > main > figure {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -5153,83 +5228,78 @@ body > main[data-theme=sepia] > main figure {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main[data-theme=sepia] > main figure {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main[data-theme=sepia] > main figure {
+  body > main[data-theme=sepia] > main > figure {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main[data-theme=sepia] > main figure {
+  body > main[data-theme=sepia] > main > figure {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main[data-theme=sepia] > main figure {
+  body > main[data-theme=sepia] > main > figure {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main[data-theme=sepia] > main figure {
+  body > main[data-theme=sepia] > main > figure {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main[data-theme=sepia] > main figure {
+  body > main[data-theme=sepia] > main > figure {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main[data-theme=sepia] > main figure {
+  body > main[data-theme=sepia] > main > figure {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main[data-theme=sepia] > main figure {
+  body > main[data-theme=sepia] > main > figure {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main[data-theme=sepia] > main figure {
+  body > main[data-theme=sepia] > main > figure {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main[data-theme=sepia] > main figure {
+  body > main[data-theme=sepia] > main > figure {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main[data-theme=sepia] > main figure {
+  body > main[data-theme=sepia] > main > figure {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main[data-theme=sepia] > main figure {
+  body > main[data-theme=sepia] > main > figure {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -5242,6 +5312,13 @@ body > main[data-theme=sepia] > main blockquote {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main[data-theme=sepia] > main blockquote {
+    margin-bottom: 0.6em;
+  }
+}
+body > main[data-theme=sepia] > main > blockquote {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -5249,83 +5326,78 @@ body > main[data-theme=sepia] > main blockquote {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main[data-theme=sepia] > main blockquote {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main[data-theme=sepia] > main blockquote {
+  body > main[data-theme=sepia] > main > blockquote {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main[data-theme=sepia] > main blockquote {
+  body > main[data-theme=sepia] > main > blockquote {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main[data-theme=sepia] > main blockquote {
+  body > main[data-theme=sepia] > main > blockquote {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main[data-theme=sepia] > main blockquote {
+  body > main[data-theme=sepia] > main > blockquote {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main[data-theme=sepia] > main blockquote {
+  body > main[data-theme=sepia] > main > blockquote {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main[data-theme=sepia] > main blockquote {
+  body > main[data-theme=sepia] > main > blockquote {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main[data-theme=sepia] > main blockquote {
+  body > main[data-theme=sepia] > main > blockquote {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main[data-theme=sepia] > main blockquote {
+  body > main[data-theme=sepia] > main > blockquote {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main[data-theme=sepia] > main blockquote {
+  body > main[data-theme=sepia] > main > blockquote {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main[data-theme=sepia] > main blockquote {
+  body > main[data-theme=sepia] > main > blockquote {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main[data-theme=sepia] > main blockquote {
+  body > main[data-theme=sepia] > main > blockquote {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -5338,6 +5410,13 @@ body > main[data-theme=sepia] > main hr {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main[data-theme=sepia] > main hr {
+    margin-bottom: 0.6em;
+  }
+}
+body > main[data-theme=sepia] > main > hr {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -5345,83 +5424,78 @@ body > main[data-theme=sepia] > main hr {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main[data-theme=sepia] > main hr {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main[data-theme=sepia] > main hr {
+  body > main[data-theme=sepia] > main > hr {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main[data-theme=sepia] > main hr {
+  body > main[data-theme=sepia] > main > hr {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main[data-theme=sepia] > main hr {
+  body > main[data-theme=sepia] > main > hr {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main[data-theme=sepia] > main hr {
+  body > main[data-theme=sepia] > main > hr {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main[data-theme=sepia] > main hr {
+  body > main[data-theme=sepia] > main > hr {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main[data-theme=sepia] > main hr {
+  body > main[data-theme=sepia] > main > hr {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main[data-theme=sepia] > main hr {
+  body > main[data-theme=sepia] > main > hr {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main[data-theme=sepia] > main hr {
+  body > main[data-theme=sepia] > main > hr {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main[data-theme=sepia] > main hr {
+  body > main[data-theme=sepia] > main > hr {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main[data-theme=sepia] > main hr {
+  body > main[data-theme=sepia] > main > hr {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main[data-theme=sepia] > main hr {
+  body > main[data-theme=sepia] > main > hr {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -5434,6 +5508,13 @@ body > main[data-theme=sepia] > main pre {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main[data-theme=sepia] > main pre {
+    margin-bottom: 0.6em;
+  }
+}
+body > main[data-theme=sepia] > main > pre {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -5441,83 +5522,78 @@ body > main[data-theme=sepia] > main pre {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main[data-theme=sepia] > main pre {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main[data-theme=sepia] > main pre {
+  body > main[data-theme=sepia] > main > pre {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main[data-theme=sepia] > main pre {
+  body > main[data-theme=sepia] > main > pre {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main[data-theme=sepia] > main pre {
+  body > main[data-theme=sepia] > main > pre {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main[data-theme=sepia] > main pre {
+  body > main[data-theme=sepia] > main > pre {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main[data-theme=sepia] > main pre {
+  body > main[data-theme=sepia] > main > pre {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main[data-theme=sepia] > main pre {
+  body > main[data-theme=sepia] > main > pre {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main[data-theme=sepia] > main pre {
+  body > main[data-theme=sepia] > main > pre {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main[data-theme=sepia] > main pre {
+  body > main[data-theme=sepia] > main > pre {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main[data-theme=sepia] > main pre {
+  body > main[data-theme=sepia] > main > pre {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main[data-theme=sepia] > main pre {
+  body > main[data-theme=sepia] > main > pre {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main[data-theme=sepia] > main pre {
+  body > main[data-theme=sepia] > main > pre {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -5530,6 +5606,13 @@ body > main[data-theme=sepia] > main table {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main[data-theme=sepia] > main table {
+    margin-bottom: 0.6em;
+  }
+}
+body > main[data-theme=sepia] > main > table {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -5537,83 +5620,78 @@ body > main[data-theme=sepia] > main table {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main[data-theme=sepia] > main table {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main[data-theme=sepia] > main table {
+  body > main[data-theme=sepia] > main > table {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main[data-theme=sepia] > main table {
+  body > main[data-theme=sepia] > main > table {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main[data-theme=sepia] > main table {
+  body > main[data-theme=sepia] > main > table {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main[data-theme=sepia] > main table {
+  body > main[data-theme=sepia] > main > table {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main[data-theme=sepia] > main table {
+  body > main[data-theme=sepia] > main > table {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main[data-theme=sepia] > main table {
+  body > main[data-theme=sepia] > main > table {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main[data-theme=sepia] > main table {
+  body > main[data-theme=sepia] > main > table {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main[data-theme=sepia] > main table {
+  body > main[data-theme=sepia] > main > table {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main[data-theme=sepia] > main table {
+  body > main[data-theme=sepia] > main > table {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main[data-theme=sepia] > main table {
+  body > main[data-theme=sepia] > main > table {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main[data-theme=sepia] > main table {
+  body > main[data-theme=sepia] > main > table {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -5626,6 +5704,13 @@ body > main[data-theme=sepia] > main h1 {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main[data-theme=sepia] > main h1 {
+    margin-bottom: 0.6em;
+  }
+}
+body > main[data-theme=sepia] > main > h1 {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -5633,83 +5718,78 @@ body > main[data-theme=sepia] > main h1 {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main[data-theme=sepia] > main h1 {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main[data-theme=sepia] > main h1 {
+  body > main[data-theme=sepia] > main > h1 {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main[data-theme=sepia] > main h1 {
+  body > main[data-theme=sepia] > main > h1 {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main[data-theme=sepia] > main h1 {
+  body > main[data-theme=sepia] > main > h1 {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main[data-theme=sepia] > main h1 {
+  body > main[data-theme=sepia] > main > h1 {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main[data-theme=sepia] > main h1 {
+  body > main[data-theme=sepia] > main > h1 {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main[data-theme=sepia] > main h1 {
+  body > main[data-theme=sepia] > main > h1 {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main[data-theme=sepia] > main h1 {
+  body > main[data-theme=sepia] > main > h1 {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main[data-theme=sepia] > main h1 {
+  body > main[data-theme=sepia] > main > h1 {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main[data-theme=sepia] > main h1 {
+  body > main[data-theme=sepia] > main > h1 {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main[data-theme=sepia] > main h1 {
+  body > main[data-theme=sepia] > main > h1 {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main[data-theme=sepia] > main h1 {
+  body > main[data-theme=sepia] > main > h1 {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -5722,6 +5802,13 @@ body > main[data-theme=sepia] > main h2 {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main[data-theme=sepia] > main h2 {
+    margin-bottom: 0.6em;
+  }
+}
+body > main[data-theme=sepia] > main > h2 {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -5729,83 +5816,78 @@ body > main[data-theme=sepia] > main h2 {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main[data-theme=sepia] > main h2 {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main[data-theme=sepia] > main h2 {
+  body > main[data-theme=sepia] > main > h2 {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main[data-theme=sepia] > main h2 {
+  body > main[data-theme=sepia] > main > h2 {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main[data-theme=sepia] > main h2 {
+  body > main[data-theme=sepia] > main > h2 {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main[data-theme=sepia] > main h2 {
+  body > main[data-theme=sepia] > main > h2 {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main[data-theme=sepia] > main h2 {
+  body > main[data-theme=sepia] > main > h2 {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main[data-theme=sepia] > main h2 {
+  body > main[data-theme=sepia] > main > h2 {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main[data-theme=sepia] > main h2 {
+  body > main[data-theme=sepia] > main > h2 {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main[data-theme=sepia] > main h2 {
+  body > main[data-theme=sepia] > main > h2 {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main[data-theme=sepia] > main h2 {
+  body > main[data-theme=sepia] > main > h2 {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main[data-theme=sepia] > main h2 {
+  body > main[data-theme=sepia] > main > h2 {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main[data-theme=sepia] > main h2 {
+  body > main[data-theme=sepia] > main > h2 {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -5818,6 +5900,13 @@ body > main[data-theme=sepia] > main h3 {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main[data-theme=sepia] > main h3 {
+    margin-bottom: 0.6em;
+  }
+}
+body > main[data-theme=sepia] > main > h3 {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -5825,83 +5914,78 @@ body > main[data-theme=sepia] > main h3 {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main[data-theme=sepia] > main h3 {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main[data-theme=sepia] > main h3 {
+  body > main[data-theme=sepia] > main > h3 {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main[data-theme=sepia] > main h3 {
+  body > main[data-theme=sepia] > main > h3 {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main[data-theme=sepia] > main h3 {
+  body > main[data-theme=sepia] > main > h3 {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main[data-theme=sepia] > main h3 {
+  body > main[data-theme=sepia] > main > h3 {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main[data-theme=sepia] > main h3 {
+  body > main[data-theme=sepia] > main > h3 {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main[data-theme=sepia] > main h3 {
+  body > main[data-theme=sepia] > main > h3 {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main[data-theme=sepia] > main h3 {
+  body > main[data-theme=sepia] > main > h3 {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main[data-theme=sepia] > main h3 {
+  body > main[data-theme=sepia] > main > h3 {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main[data-theme=sepia] > main h3 {
+  body > main[data-theme=sepia] > main > h3 {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main[data-theme=sepia] > main h3 {
+  body > main[data-theme=sepia] > main > h3 {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main[data-theme=sepia] > main h3 {
+  body > main[data-theme=sepia] > main > h3 {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -5914,6 +5998,13 @@ body > main[data-theme=sepia] > main h4 {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main[data-theme=sepia] > main h4 {
+    margin-bottom: 0.6em;
+  }
+}
+body > main[data-theme=sepia] > main > h4 {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -5921,83 +6012,78 @@ body > main[data-theme=sepia] > main h4 {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main[data-theme=sepia] > main h4 {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main[data-theme=sepia] > main h4 {
+  body > main[data-theme=sepia] > main > h4 {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main[data-theme=sepia] > main h4 {
+  body > main[data-theme=sepia] > main > h4 {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main[data-theme=sepia] > main h4 {
+  body > main[data-theme=sepia] > main > h4 {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main[data-theme=sepia] > main h4 {
+  body > main[data-theme=sepia] > main > h4 {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main[data-theme=sepia] > main h4 {
+  body > main[data-theme=sepia] > main > h4 {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main[data-theme=sepia] > main h4 {
+  body > main[data-theme=sepia] > main > h4 {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main[data-theme=sepia] > main h4 {
+  body > main[data-theme=sepia] > main > h4 {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main[data-theme=sepia] > main h4 {
+  body > main[data-theme=sepia] > main > h4 {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main[data-theme=sepia] > main h4 {
+  body > main[data-theme=sepia] > main > h4 {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main[data-theme=sepia] > main h4 {
+  body > main[data-theme=sepia] > main > h4 {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main[data-theme=sepia] > main h4 {
+  body > main[data-theme=sepia] > main > h4 {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -6010,6 +6096,13 @@ body > main[data-theme=sepia] > main h5 {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main[data-theme=sepia] > main h5 {
+    margin-bottom: 0.6em;
+  }
+}
+body > main[data-theme=sepia] > main > h5 {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -6017,83 +6110,78 @@ body > main[data-theme=sepia] > main h5 {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main[data-theme=sepia] > main h5 {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main[data-theme=sepia] > main h5 {
+  body > main[data-theme=sepia] > main > h5 {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main[data-theme=sepia] > main h5 {
+  body > main[data-theme=sepia] > main > h5 {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main[data-theme=sepia] > main h5 {
+  body > main[data-theme=sepia] > main > h5 {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main[data-theme=sepia] > main h5 {
+  body > main[data-theme=sepia] > main > h5 {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main[data-theme=sepia] > main h5 {
+  body > main[data-theme=sepia] > main > h5 {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main[data-theme=sepia] > main h5 {
+  body > main[data-theme=sepia] > main > h5 {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main[data-theme=sepia] > main h5 {
+  body > main[data-theme=sepia] > main > h5 {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main[data-theme=sepia] > main h5 {
+  body > main[data-theme=sepia] > main > h5 {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main[data-theme=sepia] > main h5 {
+  body > main[data-theme=sepia] > main > h5 {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main[data-theme=sepia] > main h5 {
+  body > main[data-theme=sepia] > main > h5 {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main[data-theme=sepia] > main h5 {
+  body > main[data-theme=sepia] > main > h5 {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -6106,6 +6194,13 @@ body > main[data-theme=sepia] > main h6 {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main[data-theme=sepia] > main h6 {
+    margin-bottom: 0.6em;
+  }
+}
+body > main[data-theme=sepia] > main > h6 {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -6113,83 +6208,78 @@ body > main[data-theme=sepia] > main h6 {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main[data-theme=sepia] > main h6 {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main[data-theme=sepia] > main h6 {
+  body > main[data-theme=sepia] > main > h6 {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main[data-theme=sepia] > main h6 {
+  body > main[data-theme=sepia] > main > h6 {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main[data-theme=sepia] > main h6 {
+  body > main[data-theme=sepia] > main > h6 {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main[data-theme=sepia] > main h6 {
+  body > main[data-theme=sepia] > main > h6 {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main[data-theme=sepia] > main h6 {
+  body > main[data-theme=sepia] > main > h6 {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main[data-theme=sepia] > main h6 {
+  body > main[data-theme=sepia] > main > h6 {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main[data-theme=sepia] > main h6 {
+  body > main[data-theme=sepia] > main > h6 {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main[data-theme=sepia] > main h6 {
+  body > main[data-theme=sepia] > main > h6 {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main[data-theme=sepia] > main h6 {
+  body > main[data-theme=sepia] > main > h6 {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main[data-theme=sepia] > main h6 {
+  body > main[data-theme=sepia] > main > h6 {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main[data-theme=sepia] > main h6 {
+  body > main[data-theme=sepia] > main > h6 {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -7002,6 +7092,13 @@ body > main[data-theme=dark] > main p {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main[data-theme=dark] > main p {
+    margin-bottom: 0.6em;
+  }
+}
+body > main[data-theme=dark] > main > p {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -7009,83 +7106,78 @@ body > main[data-theme=dark] > main p {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main[data-theme=dark] > main p {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main[data-theme=dark] > main p {
+  body > main[data-theme=dark] > main > p {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main[data-theme=dark] > main p {
+  body > main[data-theme=dark] > main > p {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main[data-theme=dark] > main p {
+  body > main[data-theme=dark] > main > p {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main[data-theme=dark] > main p {
+  body > main[data-theme=dark] > main > p {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main[data-theme=dark] > main p {
+  body > main[data-theme=dark] > main > p {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main[data-theme=dark] > main p {
+  body > main[data-theme=dark] > main > p {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main[data-theme=dark] > main p {
+  body > main[data-theme=dark] > main > p {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main[data-theme=dark] > main p {
+  body > main[data-theme=dark] > main > p {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main[data-theme=dark] > main p {
+  body > main[data-theme=dark] > main > p {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main[data-theme=dark] > main p {
+  body > main[data-theme=dark] > main > p {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main[data-theme=dark] > main p {
+  body > main[data-theme=dark] > main > p {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -7098,6 +7190,13 @@ body > main[data-theme=dark] > main ol {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main[data-theme=dark] > main ol {
+    margin-bottom: 0.6em;
+  }
+}
+body > main[data-theme=dark] > main > ol {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -7105,83 +7204,78 @@ body > main[data-theme=dark] > main ol {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main[data-theme=dark] > main ol {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main[data-theme=dark] > main ol {
+  body > main[data-theme=dark] > main > ol {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main[data-theme=dark] > main ol {
+  body > main[data-theme=dark] > main > ol {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main[data-theme=dark] > main ol {
+  body > main[data-theme=dark] > main > ol {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main[data-theme=dark] > main ol {
+  body > main[data-theme=dark] > main > ol {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main[data-theme=dark] > main ol {
+  body > main[data-theme=dark] > main > ol {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main[data-theme=dark] > main ol {
+  body > main[data-theme=dark] > main > ol {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main[data-theme=dark] > main ol {
+  body > main[data-theme=dark] > main > ol {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main[data-theme=dark] > main ol {
+  body > main[data-theme=dark] > main > ol {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main[data-theme=dark] > main ol {
+  body > main[data-theme=dark] > main > ol {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main[data-theme=dark] > main ol {
+  body > main[data-theme=dark] > main > ol {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main[data-theme=dark] > main ol {
+  body > main[data-theme=dark] > main > ol {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -7194,6 +7288,13 @@ body > main[data-theme=dark] > main ul {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main[data-theme=dark] > main ul {
+    margin-bottom: 0.6em;
+  }
+}
+body > main[data-theme=dark] > main > ul {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -7201,83 +7302,78 @@ body > main[data-theme=dark] > main ul {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main[data-theme=dark] > main ul {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main[data-theme=dark] > main ul {
+  body > main[data-theme=dark] > main > ul {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main[data-theme=dark] > main ul {
+  body > main[data-theme=dark] > main > ul {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main[data-theme=dark] > main ul {
+  body > main[data-theme=dark] > main > ul {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main[data-theme=dark] > main ul {
+  body > main[data-theme=dark] > main > ul {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main[data-theme=dark] > main ul {
+  body > main[data-theme=dark] > main > ul {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main[data-theme=dark] > main ul {
+  body > main[data-theme=dark] > main > ul {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main[data-theme=dark] > main ul {
+  body > main[data-theme=dark] > main > ul {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main[data-theme=dark] > main ul {
+  body > main[data-theme=dark] > main > ul {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main[data-theme=dark] > main ul {
+  body > main[data-theme=dark] > main > ul {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main[data-theme=dark] > main ul {
+  body > main[data-theme=dark] > main > ul {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main[data-theme=dark] > main ul {
+  body > main[data-theme=dark] > main > ul {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -7290,6 +7386,13 @@ body > main[data-theme=dark] > main dl {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main[data-theme=dark] > main dl {
+    margin-bottom: 0.6em;
+  }
+}
+body > main[data-theme=dark] > main > dl {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -7297,83 +7400,78 @@ body > main[data-theme=dark] > main dl {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main[data-theme=dark] > main dl {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main[data-theme=dark] > main dl {
+  body > main[data-theme=dark] > main > dl {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main[data-theme=dark] > main dl {
+  body > main[data-theme=dark] > main > dl {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main[data-theme=dark] > main dl {
+  body > main[data-theme=dark] > main > dl {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main[data-theme=dark] > main dl {
+  body > main[data-theme=dark] > main > dl {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main[data-theme=dark] > main dl {
+  body > main[data-theme=dark] > main > dl {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main[data-theme=dark] > main dl {
+  body > main[data-theme=dark] > main > dl {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main[data-theme=dark] > main dl {
+  body > main[data-theme=dark] > main > dl {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main[data-theme=dark] > main dl {
+  body > main[data-theme=dark] > main > dl {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main[data-theme=dark] > main dl {
+  body > main[data-theme=dark] > main > dl {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main[data-theme=dark] > main dl {
+  body > main[data-theme=dark] > main > dl {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main[data-theme=dark] > main dl {
+  body > main[data-theme=dark] > main > dl {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -7386,6 +7484,13 @@ body > main[data-theme=dark] > main figure {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main[data-theme=dark] > main figure {
+    margin-bottom: 0.6em;
+  }
+}
+body > main[data-theme=dark] > main > figure {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -7393,83 +7498,78 @@ body > main[data-theme=dark] > main figure {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main[data-theme=dark] > main figure {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main[data-theme=dark] > main figure {
+  body > main[data-theme=dark] > main > figure {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main[data-theme=dark] > main figure {
+  body > main[data-theme=dark] > main > figure {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main[data-theme=dark] > main figure {
+  body > main[data-theme=dark] > main > figure {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main[data-theme=dark] > main figure {
+  body > main[data-theme=dark] > main > figure {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main[data-theme=dark] > main figure {
+  body > main[data-theme=dark] > main > figure {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main[data-theme=dark] > main figure {
+  body > main[data-theme=dark] > main > figure {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main[data-theme=dark] > main figure {
+  body > main[data-theme=dark] > main > figure {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main[data-theme=dark] > main figure {
+  body > main[data-theme=dark] > main > figure {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main[data-theme=dark] > main figure {
+  body > main[data-theme=dark] > main > figure {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main[data-theme=dark] > main figure {
+  body > main[data-theme=dark] > main > figure {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main[data-theme=dark] > main figure {
+  body > main[data-theme=dark] > main > figure {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -7482,6 +7582,13 @@ body > main[data-theme=dark] > main blockquote {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main[data-theme=dark] > main blockquote {
+    margin-bottom: 0.6em;
+  }
+}
+body > main[data-theme=dark] > main > blockquote {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -7489,83 +7596,78 @@ body > main[data-theme=dark] > main blockquote {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main[data-theme=dark] > main blockquote {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main[data-theme=dark] > main blockquote {
+  body > main[data-theme=dark] > main > blockquote {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main[data-theme=dark] > main blockquote {
+  body > main[data-theme=dark] > main > blockquote {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main[data-theme=dark] > main blockquote {
+  body > main[data-theme=dark] > main > blockquote {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main[data-theme=dark] > main blockquote {
+  body > main[data-theme=dark] > main > blockquote {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main[data-theme=dark] > main blockquote {
+  body > main[data-theme=dark] > main > blockquote {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main[data-theme=dark] > main blockquote {
+  body > main[data-theme=dark] > main > blockquote {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main[data-theme=dark] > main blockquote {
+  body > main[data-theme=dark] > main > blockquote {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main[data-theme=dark] > main blockquote {
+  body > main[data-theme=dark] > main > blockquote {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main[data-theme=dark] > main blockquote {
+  body > main[data-theme=dark] > main > blockquote {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main[data-theme=dark] > main blockquote {
+  body > main[data-theme=dark] > main > blockquote {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main[data-theme=dark] > main blockquote {
+  body > main[data-theme=dark] > main > blockquote {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -7578,6 +7680,13 @@ body > main[data-theme=dark] > main hr {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main[data-theme=dark] > main hr {
+    margin-bottom: 0.6em;
+  }
+}
+body > main[data-theme=dark] > main > hr {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -7585,83 +7694,78 @@ body > main[data-theme=dark] > main hr {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main[data-theme=dark] > main hr {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main[data-theme=dark] > main hr {
+  body > main[data-theme=dark] > main > hr {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main[data-theme=dark] > main hr {
+  body > main[data-theme=dark] > main > hr {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main[data-theme=dark] > main hr {
+  body > main[data-theme=dark] > main > hr {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main[data-theme=dark] > main hr {
+  body > main[data-theme=dark] > main > hr {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main[data-theme=dark] > main hr {
+  body > main[data-theme=dark] > main > hr {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main[data-theme=dark] > main hr {
+  body > main[data-theme=dark] > main > hr {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main[data-theme=dark] > main hr {
+  body > main[data-theme=dark] > main > hr {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main[data-theme=dark] > main hr {
+  body > main[data-theme=dark] > main > hr {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main[data-theme=dark] > main hr {
+  body > main[data-theme=dark] > main > hr {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main[data-theme=dark] > main hr {
+  body > main[data-theme=dark] > main > hr {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main[data-theme=dark] > main hr {
+  body > main[data-theme=dark] > main > hr {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -7674,6 +7778,13 @@ body > main[data-theme=dark] > main pre {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main[data-theme=dark] > main pre {
+    margin-bottom: 0.6em;
+  }
+}
+body > main[data-theme=dark] > main > pre {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -7681,83 +7792,78 @@ body > main[data-theme=dark] > main pre {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main[data-theme=dark] > main pre {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main[data-theme=dark] > main pre {
+  body > main[data-theme=dark] > main > pre {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main[data-theme=dark] > main pre {
+  body > main[data-theme=dark] > main > pre {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main[data-theme=dark] > main pre {
+  body > main[data-theme=dark] > main > pre {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main[data-theme=dark] > main pre {
+  body > main[data-theme=dark] > main > pre {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main[data-theme=dark] > main pre {
+  body > main[data-theme=dark] > main > pre {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main[data-theme=dark] > main pre {
+  body > main[data-theme=dark] > main > pre {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main[data-theme=dark] > main pre {
+  body > main[data-theme=dark] > main > pre {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main[data-theme=dark] > main pre {
+  body > main[data-theme=dark] > main > pre {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main[data-theme=dark] > main pre {
+  body > main[data-theme=dark] > main > pre {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main[data-theme=dark] > main pre {
+  body > main[data-theme=dark] > main > pre {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main[data-theme=dark] > main pre {
+  body > main[data-theme=dark] > main > pre {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -7770,6 +7876,13 @@ body > main[data-theme=dark] > main table {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main[data-theme=dark] > main table {
+    margin-bottom: 0.6em;
+  }
+}
+body > main[data-theme=dark] > main > table {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -7777,83 +7890,78 @@ body > main[data-theme=dark] > main table {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main[data-theme=dark] > main table {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main[data-theme=dark] > main table {
+  body > main[data-theme=dark] > main > table {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main[data-theme=dark] > main table {
+  body > main[data-theme=dark] > main > table {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main[data-theme=dark] > main table {
+  body > main[data-theme=dark] > main > table {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main[data-theme=dark] > main table {
+  body > main[data-theme=dark] > main > table {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main[data-theme=dark] > main table {
+  body > main[data-theme=dark] > main > table {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main[data-theme=dark] > main table {
+  body > main[data-theme=dark] > main > table {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main[data-theme=dark] > main table {
+  body > main[data-theme=dark] > main > table {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main[data-theme=dark] > main table {
+  body > main[data-theme=dark] > main > table {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main[data-theme=dark] > main table {
+  body > main[data-theme=dark] > main > table {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main[data-theme=dark] > main table {
+  body > main[data-theme=dark] > main > table {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main[data-theme=dark] > main table {
+  body > main[data-theme=dark] > main > table {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -7866,6 +7974,13 @@ body > main[data-theme=dark] > main h1 {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main[data-theme=dark] > main h1 {
+    margin-bottom: 0.6em;
+  }
+}
+body > main[data-theme=dark] > main > h1 {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -7873,83 +7988,78 @@ body > main[data-theme=dark] > main h1 {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main[data-theme=dark] > main h1 {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main[data-theme=dark] > main h1 {
+  body > main[data-theme=dark] > main > h1 {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main[data-theme=dark] > main h1 {
+  body > main[data-theme=dark] > main > h1 {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main[data-theme=dark] > main h1 {
+  body > main[data-theme=dark] > main > h1 {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main[data-theme=dark] > main h1 {
+  body > main[data-theme=dark] > main > h1 {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main[data-theme=dark] > main h1 {
+  body > main[data-theme=dark] > main > h1 {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main[data-theme=dark] > main h1 {
+  body > main[data-theme=dark] > main > h1 {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main[data-theme=dark] > main h1 {
+  body > main[data-theme=dark] > main > h1 {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main[data-theme=dark] > main h1 {
+  body > main[data-theme=dark] > main > h1 {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main[data-theme=dark] > main h1 {
+  body > main[data-theme=dark] > main > h1 {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main[data-theme=dark] > main h1 {
+  body > main[data-theme=dark] > main > h1 {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main[data-theme=dark] > main h1 {
+  body > main[data-theme=dark] > main > h1 {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -7962,6 +8072,13 @@ body > main[data-theme=dark] > main h2 {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main[data-theme=dark] > main h2 {
+    margin-bottom: 0.6em;
+  }
+}
+body > main[data-theme=dark] > main > h2 {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -7969,83 +8086,78 @@ body > main[data-theme=dark] > main h2 {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main[data-theme=dark] > main h2 {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main[data-theme=dark] > main h2 {
+  body > main[data-theme=dark] > main > h2 {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main[data-theme=dark] > main h2 {
+  body > main[data-theme=dark] > main > h2 {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main[data-theme=dark] > main h2 {
+  body > main[data-theme=dark] > main > h2 {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main[data-theme=dark] > main h2 {
+  body > main[data-theme=dark] > main > h2 {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main[data-theme=dark] > main h2 {
+  body > main[data-theme=dark] > main > h2 {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main[data-theme=dark] > main h2 {
+  body > main[data-theme=dark] > main > h2 {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main[data-theme=dark] > main h2 {
+  body > main[data-theme=dark] > main > h2 {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main[data-theme=dark] > main h2 {
+  body > main[data-theme=dark] > main > h2 {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main[data-theme=dark] > main h2 {
+  body > main[data-theme=dark] > main > h2 {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main[data-theme=dark] > main h2 {
+  body > main[data-theme=dark] > main > h2 {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main[data-theme=dark] > main h2 {
+  body > main[data-theme=dark] > main > h2 {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -8058,6 +8170,13 @@ body > main[data-theme=dark] > main h3 {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main[data-theme=dark] > main h3 {
+    margin-bottom: 0.6em;
+  }
+}
+body > main[data-theme=dark] > main > h3 {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -8065,83 +8184,78 @@ body > main[data-theme=dark] > main h3 {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main[data-theme=dark] > main h3 {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main[data-theme=dark] > main h3 {
+  body > main[data-theme=dark] > main > h3 {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main[data-theme=dark] > main h3 {
+  body > main[data-theme=dark] > main > h3 {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main[data-theme=dark] > main h3 {
+  body > main[data-theme=dark] > main > h3 {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main[data-theme=dark] > main h3 {
+  body > main[data-theme=dark] > main > h3 {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main[data-theme=dark] > main h3 {
+  body > main[data-theme=dark] > main > h3 {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main[data-theme=dark] > main h3 {
+  body > main[data-theme=dark] > main > h3 {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main[data-theme=dark] > main h3 {
+  body > main[data-theme=dark] > main > h3 {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main[data-theme=dark] > main h3 {
+  body > main[data-theme=dark] > main > h3 {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main[data-theme=dark] > main h3 {
+  body > main[data-theme=dark] > main > h3 {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main[data-theme=dark] > main h3 {
+  body > main[data-theme=dark] > main > h3 {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main[data-theme=dark] > main h3 {
+  body > main[data-theme=dark] > main > h3 {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -8154,6 +8268,13 @@ body > main[data-theme=dark] > main h4 {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main[data-theme=dark] > main h4 {
+    margin-bottom: 0.6em;
+  }
+}
+body > main[data-theme=dark] > main > h4 {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -8161,83 +8282,78 @@ body > main[data-theme=dark] > main h4 {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main[data-theme=dark] > main h4 {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main[data-theme=dark] > main h4 {
+  body > main[data-theme=dark] > main > h4 {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main[data-theme=dark] > main h4 {
+  body > main[data-theme=dark] > main > h4 {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main[data-theme=dark] > main h4 {
+  body > main[data-theme=dark] > main > h4 {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main[data-theme=dark] > main h4 {
+  body > main[data-theme=dark] > main > h4 {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main[data-theme=dark] > main h4 {
+  body > main[data-theme=dark] > main > h4 {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main[data-theme=dark] > main h4 {
+  body > main[data-theme=dark] > main > h4 {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main[data-theme=dark] > main h4 {
+  body > main[data-theme=dark] > main > h4 {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main[data-theme=dark] > main h4 {
+  body > main[data-theme=dark] > main > h4 {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main[data-theme=dark] > main h4 {
+  body > main[data-theme=dark] > main > h4 {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main[data-theme=dark] > main h4 {
+  body > main[data-theme=dark] > main > h4 {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main[data-theme=dark] > main h4 {
+  body > main[data-theme=dark] > main > h4 {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -8250,6 +8366,13 @@ body > main[data-theme=dark] > main h5 {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main[data-theme=dark] > main h5 {
+    margin-bottom: 0.6em;
+  }
+}
+body > main[data-theme=dark] > main > h5 {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -8257,83 +8380,78 @@ body > main[data-theme=dark] > main h5 {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main[data-theme=dark] > main h5 {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main[data-theme=dark] > main h5 {
+  body > main[data-theme=dark] > main > h5 {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main[data-theme=dark] > main h5 {
+  body > main[data-theme=dark] > main > h5 {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main[data-theme=dark] > main h5 {
+  body > main[data-theme=dark] > main > h5 {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main[data-theme=dark] > main h5 {
+  body > main[data-theme=dark] > main > h5 {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main[data-theme=dark] > main h5 {
+  body > main[data-theme=dark] > main > h5 {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main[data-theme=dark] > main h5 {
+  body > main[data-theme=dark] > main > h5 {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main[data-theme=dark] > main h5 {
+  body > main[data-theme=dark] > main > h5 {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main[data-theme=dark] > main h5 {
+  body > main[data-theme=dark] > main > h5 {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main[data-theme=dark] > main h5 {
+  body > main[data-theme=dark] > main > h5 {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main[data-theme=dark] > main h5 {
+  body > main[data-theme=dark] > main > h5 {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main[data-theme=dark] > main h5 {
+  body > main[data-theme=dark] > main > h5 {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -8346,6 +8464,13 @@ body > main[data-theme=dark] > main h6 {
   margin-top: 0.6em;
   margin-bottom: 1.2em;
   /* case: large display */
+}
+@media all and (min-width: 768px) {
+  body > main[data-theme=dark] > main h6 {
+    margin-bottom: 0.6em;
+  }
+}
+body > main[data-theme=dark] > main > h6 {
   /* case: base */
   width: calc(100% - 2 * 20px);
   margin-right: 20px;
@@ -8353,83 +8478,78 @@ body > main[data-theme=dark] > main h6 {
   /* case: fluid range */
   /* case: large */
 }
-@media all and (min-width: 768px) {
-  body > main[data-theme=dark] > main h6 {
-    margin-bottom: 0.6em;
-  }
-}
 @media all and (min-width: 360px) {
-  body > main[data-theme=dark] > main h6 {
+  body > main[data-theme=dark] > main > h6 {
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 2 * 20px);
   }
 }
 @media all and (min-width: 408.8px) {
-  body > main[data-theme=dark] > main h6 {
+  body > main[data-theme=dark] > main > h6 {
     margin-left: 22px;
     margin-right: 22px;
     width: calc(100% - 2 * 22px);
   }
 }
 @media all and (min-width: 457.6px) {
-  body > main[data-theme=dark] > main h6 {
+  body > main[data-theme=dark] > main > h6 {
     margin-left: 24px;
     margin-right: 24px;
     width: calc(100% - 2 * 24px);
   }
 }
 @media all and (min-width: 506.4px) {
-  body > main[data-theme=dark] > main h6 {
+  body > main[data-theme=dark] > main > h6 {
     margin-left: 26px;
     margin-right: 26px;
     width: calc(100% - 2 * 26px);
   }
 }
 @media all and (min-width: 555.2px) {
-  body > main[data-theme=dark] > main h6 {
+  body > main[data-theme=dark] > main > h6 {
     margin-left: 28px;
     margin-right: 28px;
     width: calc(100% - 2 * 28px);
   }
 }
 @media all and (min-width: 604px) {
-  body > main[data-theme=dark] > main h6 {
+  body > main[data-theme=dark] > main > h6 {
     margin-left: 30px;
     margin-right: 30px;
     width: calc(100% - 2 * 30px);
   }
 }
 @media all and (min-width: 652.8px) {
-  body > main[data-theme=dark] > main h6 {
+  body > main[data-theme=dark] > main > h6 {
     margin-left: 32px;
     margin-right: 32px;
     width: calc(100% - 2 * 32px);
   }
 }
 @media all and (min-width: 701.6px) {
-  body > main[data-theme=dark] > main h6 {
+  body > main[data-theme=dark] > main > h6 {
     margin-left: 34px;
     margin-right: 34px;
     width: calc(100% - 2 * 34px);
   }
 }
 @media all and (min-width: 750.4px) {
-  body > main[data-theme=dark] > main h6 {
+  body > main[data-theme=dark] > main > h6 {
     margin-left: 36px;
     margin-right: 36px;
     width: calc(100% - 2 * 36px);
   }
 }
 @media all and (min-width: 799.2px) {
-  body > main[data-theme=dark] > main h6 {
+  body > main[data-theme=dark] > main > h6 {
     margin-left: 38px;
     margin-right: 38px;
     width: calc(100% - 2 * 38px);
   }
 }
 @media all and (min-width: 848px) {
-  body > main[data-theme=dark] > main h6 {
+  body > main[data-theme=dark] > main > h6 {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
