@@ -30,7 +30,9 @@
       @media all and (min-width: $viewport-width_max) {
         margin-bottom: $block-margin_top;
       }
-
+    }
+    
+    > #{$elem} {
       @include fluid-margin;
     }
   }
