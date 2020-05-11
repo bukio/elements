@@ -12,6 +12,10 @@
   color: $color_primary;
 }
 
+& > main {
+  @include fluid-margin;
+}
+
 /* blocks for main content */
 & > main {
   // ----------------------------------------------
@@ -21,6 +25,9 @@
     #{$elem} {
       padding: 0 0;
       box-sizing: border-box;
+      
+      margin-left: 0;
+      margin-right: 0;
 
       /* case: mobile */
       margin-top: $block-margin_top;
@@ -30,10 +37,6 @@
       @media all and (min-width: $viewport-width_max) {
         margin-bottom: $block-margin_top;
       }
-    }
-    
-    > #{$elem} {
-      @include fluid-margin;
     }
   }
 
