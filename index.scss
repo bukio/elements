@@ -32,6 +32,11 @@ $content-footer: "body > main > footer";
   -webkit-font-smoothing: antialiased;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 #{$app-header},
 #{$app-footer},
 #{$content-header},
@@ -58,66 +63,94 @@ $content-footer: "body > main > footer";
 
 /* application header */
 #{$app-header} {
+  
+  padding-top: 72px;
+  
   nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    z-index: 1;
+  
     display: flex;
     height: 72px;
     align-items: center;
     border-bottom: 1px solid #CCC;
-    padding: 0 24px;
+    padding: 0 1.5em;
+    font-size: 16px;
+    
+    @media (max-width: 640px) {
+      font-size: 12px;
+      
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      
+      .center {
+        display: none !important;
+      }
+    }
+    
+    /* dropdown */
+    select {
+      flex: 0 0 auto;
+
+      font-family: sans-serif;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background: transparent;
+      background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+      background-repeat: no-repeat;
+      background-position-x: 100%;
+      background-position-y: 50%;
+      border: 1px solid black;
+      border-radius: 1px;
+      padding: 0.375em 1.625em 0.375em 1em;
+      font-size: 1em;
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+      }
+    }
+    
+    .control + .control {
+      margin-left: 0.75em;
+    }
 
     .left {
       flex: 0 0 auto;
       font-family: sans-serif;
-      font-size: 36px;
+      font-size: 2.25em;
     }
+    
     .center {
       flex: 1 1 auto;
       display: flex;
-      justify-content: flex-end;
-      padding: 0 24px;
-      
-      /* dropdown */
-      select {
-        flex: 0 0 auto;
-
-        font-family: sans-serif;
-        font-size: 24px;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        background: transparent;
-        background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
-        background-repeat: no-repeat;
-        background-position-x: 100%;
-        background-position-y: 5px;
-        border: 1px solid black;
-        border-radius: 1px;
-        padding: 6px 36px 6px 24px;
-        font-size: 16px;
-        cursor: pointer;
-
-        &:focus {
-          outline: none;
-        }
-
-        & + select {
-          margin-left: 12px;
-        }
-      }
+      padding: 0 1.5em;
     }
+    
     .right {
       flex: 0 0 auto;
       display: flex;
       align-items: center;
       
+      .control.zoom {
+        display: inline-flex;
+        align-items: center;
+      }
+      
       #zoom-plus, #zoom-minus {
         cursor: pointer;
         user-select: none;
-        font-size: 30px;
+        font-size: 1.625em;
       }
       
       #zoom-label {
-        padding: 0 16px;
-        font-size: 24px;
+        padding: 0 0.5em;
+        font-size: 1.25em;
         cursor: pointer;
       }
       
@@ -131,7 +164,16 @@ $content-footer: "body > main > footer";
 
 /* application footer */
 #{$app-footer} {
+  padding-top: 72px;
+  
   nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    z-index: 1;
+  
     display: flex;
     align-items: center;
     justify-content: center;
