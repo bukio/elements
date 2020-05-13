@@ -193,6 +193,10 @@ html, body {
   display: flex;
   flex-direction: row;
   margin: 0 0;
+  
+  @media (max-width: 640px) {
+    flex-direction: column;
+  }
 
   /* back to TOC */
   a.back {
