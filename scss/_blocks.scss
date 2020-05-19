@@ -12,6 +12,35 @@
   color: $color_primary;
 }
 
+& > header,
+& > main {
+  // ----------------------------------------------
+  // H1, H2, H3, H4, H5, H6
+  // ----------------------------------------------
+  @each $elem in $content-headings {
+    #{$elem} {
+      line-height: $line-height * .8;
+      font-weight: bold;
+      word-break: keep-all;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      word-spacing: .0612em; /* a bit more space */
+
+      /* inline formats within headings */
+      i {
+        font-weight: normal;
+      }
+    }
+  }
+  
+  /* heading - font size (modular scale) */
+  @for $i from 1 through 6 {
+    h#{$i} {
+      font-size: $heading-fontsize_min * math.pow($heading-fontsize_multiplier, 6 - $i)
+    }
+  }
+}
+
 & > main {
   @include fluid-margin;
 }
@@ -71,29 +100,10 @@
   // ----------------------------------------------
   @each $elem in $content-headings {
     #{$elem} {
-      line-height: $line-height * .8;
-      font-weight: bold;
-      word-break: keep-all;
-      word-wrap: break-word;
-      text-rendering: optimizeLegibility;
-      word-spacing: .0612em; /* a bit more space */
-
-      /* inline formats within headings */
-      i {
-        font-weight: normal;
-      }
-
       /* special case */
       & + p {
         text-indent: 0;
       }
-    }
-  }
-
-  /* heading - font size (modular scale) */
-  @for $i from 1 through 6 {
-    h#{$i} {
-      font-size: $heading-fontsize_min * math.pow($heading-fontsize_multiplier, 6 - $i)
     }
   }
 
