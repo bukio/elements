@@ -34,7 +34,7 @@
     "modularscale-sass": "^3.0.10",
     "parcel-bundler": "^1.12.4",
     "posthtml-include": "^1.4.0",
-    "sass": "^1.26.2",
+    "sass": "^1.43.4",
     "sass-math-pow": "^0.1.7",
     "typescript": "^3.8.3"
   },
