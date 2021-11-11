@@ -1,3 +1,5 @@
+@use "sass:math";
+
 @use "variables" as *;
 
 // ----------------------------------------------
@@ -32,7 +34,7 @@
   $step: $w-diff * 0.1;
   
   @while $current < $width-max {
-    $factor: ($current - $width-min) / $w-diff;
+    $factor: math.div($current - $width-min, $w-diff);
     @media all and (min-width: $current) {
       font-size: $fontsize_min + $f-diff * $factor;
     }
@@ -65,7 +67,7 @@
   $step: $w-diff * 0.1;
 
   @while $current < $width-max {
-    $factor: ($current - $width-min) / $w-diff;
+    $factor: math.div($current - $width-min, $w-diff);
     @media all and (min-width: $current) {
       $value: $viewport-margin-min + $m-diff * $factor;
       margin-left: $value;

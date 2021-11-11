@@ -1,6 +1,8 @@
 //
 // content blocks
 //
+@use "sass:math";
+
 $content-headings: (h1, h2, h3, h4, h5, h6);
 $content-blocks: join(
   (p, ol, ul, dl, figure, blockquote, hr, pre, table),
@@ -31,7 +33,7 @@ $viewport-width_max: 768px !default;
 $fontsize_min: 1.0em !default;
 $fontsize_max: 1.4em !default;
 
-$heading-fontsize_min: 1em / (1.250 * 1.250) !default;
+$heading-fontsize_min: math.div(1em, 1.250 * 1.250) !default;
 $heading-fontsize_multiplier: 1.250 !default;
 
 /* mobile block margins */
