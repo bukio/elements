@@ -23,7 +23,7 @@ header:empty, main:empty, footer:empty {
 }
 
 body > main {
-  font-family: "Roboto", "Noto Sans Korean", "Apple SD Gothic Neo", "Helvetica Neue", Arial, "Nanum Gothic", Helvetica, sans-serif;
+  font-family: "Roboto", "Noto Sans KR", "Apple SD Gothic Neo", "Helvetica Neue", Arial, "Nanum Gothic", Helvetica, sans-serif;
   font-size: 14px;
   line-height: 1.6;
   /* selection background */
