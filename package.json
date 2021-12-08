@@ -1,6 +1,6 @@
 {
   "name": "@bukio/elements",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Reasonable CSS styles for HTML elements used in content markup",
   "main": "index.js",
   "scripts": {
