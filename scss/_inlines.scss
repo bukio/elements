@@ -4,11 +4,14 @@
   // ----------------------------------------------
   i {
     font-size: .85em;
-    vertical-align: top;
     font-style: normal;
     opacity: .54;
     padding: 0 0.2em 0 0.1em;
     letter-spacing: -.5px;
+    
+    &, * {
+      vertical-align: top;  
+    }
   }
 
   // ----------------------------------------------
